@@ -111,7 +111,7 @@ table#example {
         ***********************************-->
         <div class="nav-header">
             <a href="{{asset('')}}" class="brand-logo">
-                <img src="{{asset('')}}main/assets/images/Blue Bold Typographic Aqua Water Logo.png" style="    width: 195px;
+                <img src="{{asset('')}}main/assets/images/logo.png" style="    width: 195px;
                 margin: 0px auto;" alt=""/>
 
             </a>
