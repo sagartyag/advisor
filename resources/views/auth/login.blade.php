@@ -128,7 +128,7 @@
                                 @csrf
                                 <div class="logo">
                                     <a href="{{ route('Index') }}">
-                                        <img src="{{ asset('main/assets/images/Blue Bold Typographic Aqua Water Logo.png') }}"
+                                        <img src="{{ asset('main/assets/images/logo.png') }}"
                                             alt="Logo">
                                     </a>
                                 </div>

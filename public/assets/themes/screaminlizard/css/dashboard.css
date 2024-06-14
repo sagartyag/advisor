@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap");
 :root {
-  --primary: #FFE81D;
+  --primary: #09a223;
   --primaryAlpha: rgba(88, 86, 233, 0.2);
   --secondary: #e279f9;
   --success: #26cc8c;
@@ -12,19 +12,19 @@
   --warning: #ffce00;
   --warningAlpha: rgba(255, 204, 0, 0.2);
   --gold: #ffc107;
-  --white: #fff;
-  --black: #020015;
-  --dark: #050c20;
-  --dark2: #0f1730;
+  --white: #000;
+  --black: #e4ffe9;
+  --dark: #fbfbfb;
+  --dark2: #d8d8d8;
   --borderColor: #1f262e;
-  --fontColor: #bdbadb;
+  --fontColor: #1f262e;
   --yt: #f20000;
   --fb: #1877f2;
   --ig: #e2306c;
   --tw: #1d9bf0;
   --in: #0172b1;
   --google: #2ba24c;
-  --gradiant: linear-gradient(90deg, #f0ec43 0%, #ffe81e 100%);
+  --gradiant: #2ba24c;
   --gradiantAlpha: linear-gradient(90deg, rgba(101, 254, 101, 0.04) 0%, rgba(32, 227, 178, 0.04) 100%);
 }
 
@@ -547,6 +547,7 @@ a.btn-custom {
   border-radius: 10px;
   background: var(--dark);
   height: 100%;
+  box-shadow: 1px 1px 1px 1px;
 }
 .card-box text,
 .card-box span,
@@ -845,7 +846,7 @@ a.btn-custom {
 }
 
 .navbar {
-  background: var(--dark);
+  background: #fbfbfb;
   padding: 10px;
   height: 80px;
   margin: 15px 20px;
@@ -3181,7 +3182,7 @@ button.gold-btn.addFund {
     background: transparent;
     margin-bottom: 20px;
     border: 1px solid var(--primary);
-    color: #fff;
+    color: #232323;
     transition: all .2s ease;
     display: block;
     -webkit-transition: all .2s ease;

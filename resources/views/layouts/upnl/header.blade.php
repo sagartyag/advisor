@@ -107,7 +107,7 @@
 
             <div class="sidebar-top">
                 <a class="navbar-brand d-none d-lg-block" href="{{asset('')}}"> <img
-                        src="main/assets/images/Blue Bold Typographic Aqua Water Logo.png" style="width: 177px; margin-bottom: 21px;margin-left: 34px;" alt="brand logo" /></a>
+                        src="main/assets/images/logo.png" style="width: 177px; margin-bottom: 21px;margin-left: 34px;" alt="brand logo" /></a>
                 <div class="mobile-user-area ">
                     <div class="thumb">
                         <img class="img-fluid user-img" src="assets/uploads/male-avatar-icon-13.jpg" alt="...">
