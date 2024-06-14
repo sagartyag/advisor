@@ -37,6 +37,13 @@
         </div>
     </div>
     <div class="main row">
+    <div class="col-md-6">
+            <!-- Image -->
+            <div class="image-container">
+                <img src="{{asset('')}}assets\uploads\content\qr-code-file-bangla-mobile-code-0.png"style="height: 400px; width: 400px; alt="Your Image" class="img-fluid">
+            </div>
+        </div>
+
         <div class="col-md-6">
             <!-- Image -->
             <div class="image-container">
@@ -84,12 +91,6 @@
             <!-- Bank Details Table -->
            
         </div>
-
-
-
-
-
-
     </div>
 </div>
 
