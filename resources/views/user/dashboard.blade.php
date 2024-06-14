@@ -78,6 +78,17 @@
                                 <p class="mb-0">Direct Income</p>
                             </div>
                         </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-12">
+                            <div class="card-box">
+                                <div class="d-flex justify-content-between">
+                                    <h4>{{ currency() }}
+                                        {{ number_format(Auth::user()->sponsorship_bonus->sum('comm'), 2) }}</h4>
+                                    <i class="fal fa-envelope-open-dollar"></i>
+                                </div>
+                                <p class="mb-0">Level Income</p>
+                            </div>
+                        </div>
                         <!-- <div class="col-xl-3 col-lg-4 col-md-12">
                             <div class="card-box">
                                 <div class="d-flex justify-content-between">
