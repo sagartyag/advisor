@@ -6,7 +6,7 @@
 				<!-- TOP BAR -->
 				<div class="top-bar-simple clearfix">
 					<div class="container">
-						<p>We have over 15 years of experience.</p>
+						<p>Experienced leaders in direct selling, enhancing education with diverse products.</p>
 						<ul class="social">
 							<li><a href="#." class="facebook"><i class="icon-facebook-1"></i></a></li>
 							<li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
@@ -216,7 +216,7 @@
 						<div class="col-md-6 animate fadeInLeft">
 							<h2>Company overview</h2>
 							<div class="height-10"></div>
-							<p>We have over 15 years of experience Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power of consectetur adi pisi cing elit, sed do eiusmod tempor xercitationemut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec risus et suscipit Curabitur metus ipsum. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+							<p>HML Advertising & Marketing, a division of Carrier Developments PVT LTD, leverages extensive experience to be a leading direct selling company focusing on the betterment of education. Our diverse product range includes health care, personal care, hair care, FMCG, agricultural aid, home care, deodorants, perfumes, and beauty and skin treatments, supported by a dedicated network of over 10,000 members.</p>
 						</div>
 						<div class="col-md-6 animate fadeInRight">
 							<div class="image-widget">
@@ -233,8 +233,8 @@
             <section class="bg-blue">
 				<div class="container">
 					<div class="heading margin-bottom-50 animate bounceIn">
-						<h2>Company History</h2>
-						<p>it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself.</p>
+						<h2>MATRIX TERMS</h2>
+						<p>Maintain monthly new joinings for continuous level income and adhere to referral requirements for matrix achievements.</p>
 					</div>
 					<ul class="company-history">
 						<li class="clearfix animate fadeInLeft">
