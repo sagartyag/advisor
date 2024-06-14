@@ -8,6 +8,13 @@
         </div>
     </div>
     <div class="main row">
+    <div class="col-md-6">
+            <!-- Image -->
+            <div class="image-container">
+                <img src="{{asset('')}}assets\uploads\content\qr-code-file-bangla-mobile-code-0.png"style="height: 400px; width: 400px; alt="Your Image" class="img-fluid">
+            </div>
+        </div>
+
         <div class="col-md-6">
             <!-- table -->
             <div class="table-parent table-responsive mt-4">
@@ -51,37 +58,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-6">
-            <div class="table-parent table-responsive mt-4">
-                <div class="table-search-bar">
-                    <div>
-                        <form action="{{ route('user.BankDetail') }}" method="get">
-                            @csrf
-                            <div class="row g-3 align-items-end">
-                                <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12 mb-4">
-                                    Bank Name : <b> <b>{{ $bank->bank_name ?? 'Na' }}</b>
-                                </div>
-                                <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12 mb-5">
-                                    Account Number : <b>{{ $bank->account_no ?? 'Na' }}</b>
-                                </div>
-                                <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12 mb-5">
-                                    IFSC Code : <b>{{ $bank->ifsc_code ?? 'Na' }}</b>
-                                </div>
-                                <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12 mb-5">
-                                    Branch Name : <b> {{ $bank->branch_name ?? 'Na' }}</b>
-                                </div>
-                                <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12 mb-5">
-                                    Pancard No : <b> {{ $bank->pancard_no ?? 'Na' }}</b>
-                                </div>
-                            </div>
-                        </form>
-
                     </div>
                 </div>
             </div>
