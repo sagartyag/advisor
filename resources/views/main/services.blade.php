@@ -8,7 +8,7 @@
 				<!-- TOP BAR -->
 				<div class="top-bar-simple clearfix">
 					<div class="container">
-						<p>We have over 15 years of experience.</p>
+						<p>Income from Social Media:</p>
 						<ul class="social">
 							<li><a href="#." class="facebook"><i class="icon-facebook-1"></i></a></li>
 							<li><a href="#." class="twitter"><i class="icon-twitter-1"></i></a></li>
@@ -220,25 +220,25 @@
 							<aside>
 								
 								<ul class="left-nav">
-									<li><a href="#.">Financial Planning <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Bonds &amp; Commodities <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#.">Social Media Income<i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#."> Self Job &amp; Creation <i class="fa fa-angle-right"></i></a></li>
 									<li><a href="#." class="active">Turnaround Consulting <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Trades &amp; Stocks <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Investment Trusts <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Mutual Funds <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Retirement <i class="fa fa-angle-right"></i></a></li>
-									<li><a href="#.">Strategic Planning <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#.">Passive &amp;Earnings  <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#.">Network Growth <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#.">Financial Independence<i class="fa fa-angle-right"></i></a></li>
+									<!-- <li><a href="#.">Retirement <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#.">Strategic Planning <i class="fa fa-angle-right"></i></a></li> -->
 								</ul>
 								
 								<div class="help-widget">
-									<h5>how can we help you?</h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor.</p>
+									<h5>Income from Social Media</h5>
+									<p>For more information or assistance, please visit our Contact page.</p>
 									<a href="contact-us.html" class="btn btn-primary btn-white get-in-touch" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
 								</div>
 								
 								<a href="#." class="company-presentation-link"><i class="icon-file-pdf-o"></i> Company Presentation</a>
 								
-								<div class="testimonial">
+								<!-- <div class="testimonial">
 									<div class="testimonial-content">
 										<h5>Testimonials</h5>
 										<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore Love life’s sweetest.</p>
@@ -251,7 +251,7 @@
 									</div>
 										
 									
-								</div>
+								</div> -->
 								
 							</aside>
 						</div>
@@ -263,20 +263,20 @@
 							</div>
 							<br>
 							<br>
-							<p>We have over 15 years of experience Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power of consectetur adi pisi cing elit, sed do eiusmod tempor xercitationemut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nec risus et suscipit Curabitur metus ipsum. But I must explain to you how all this mistaken idea of denouncing.</p>
-							<p>expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
+							<p>At HML Advertising & Marketing, we are committed to continuous innovation and providing our members with new and exciting opportunities. Our upcoming projects are designed to help you maximize your earnings and engagement in the digital space</p>
+							<!-- <p>expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p> -->
 							<br>
-							<h3>Business plan market</h3>
-							<p>Expound the actual teachings. of the great explorer of the truth, the master-builder of No one rejects, dislikes, or human happiness. </p>
+							<h3>Income from Social Media</h3>
+							<p>Start earning from social media activities soon.</p>
 							<br>
 							
 							<blockquote>
-								<p>consectetur adipiscing elit. Aenean Lorem ipsm dolor sit the power of consectetur adi pisi cing elit, sed do eiusmod tempor xercitationemut labore</p>
+								<p>Generate income by engaging with content on social media platforms through likes, shares, and subscriptions.</p>
 							</blockquote>
 							<br>
-							<h3>Safety wealth</h3>
+							<!-- <h3>Safety wealth</h3> -->
 							
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-md-6">
 									<div class="chart-widget">
 										<div id="chartContainer" style="height: 210px; width: 100%;"></div>
@@ -417,7 +417,7 @@
 								<div role="tabpanel" class="tab-pane" id="risks-of-investing">
 									<p>expound the actual teachings. of the great explorer of the truth, the  aster-builder of No one rejects, dislikes, or human happiness. </p>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>

@@ -100,7 +100,7 @@
               <li><a href="{{route('Index')}}">Home</a></li>
               <li><a href="{{route('about-us')}}">About Us</a></li>
               <li><a href="{{route('services')}}">Services</a></li>
-              <li><a href="{{route('news')}}">News</a></li>
+              <!-- <li><a href="{{route('news')}}">News</a></li> -->
               <li><a href="{{route('contact-us')}}">Contact</a></li>
               <li><a href="{{route('login')}}">Login</a></li>
               <li><a href="{{route('register')}}">Register</a></li>

@@ -245,12 +245,10 @@
 						<span class="cd-marker item-1"></span>
 						
 						<ul>
-							<li class="selected"><a href="#0"><div class="slide-number">1</div> Money Care<span> ₹ 6230975</span></a></li>
-							<li><a href="#0"><div class="slide-number">2</div>NON – WORKING POOL (₹ 500)<span>₹ 31147378</span></a></li>
-							<li><a href="#0"><div class="slide-number">3</div>  NON – WORKING POOL (₹ 1000)<span> ₹ 61556750</span></a></li>
-							<li><a href="#0"><div class="slide-number">4</div>  REWARDS INCOME<span>T
- REWARDS INCOME
- ₹ 1779250</span></a></li>
+							<li class="selected"><a href="#0"><div class="slide-number">1</div> Money Care<span> </span></a></li>
+							<li><a href="#0"><div class="slide-number">2</div>NON – WORKING POOL <span> </span></a></li>
+							<li><a href="#0"><div class="slide-number">3</div>  NON – WORKING POOL <span> </span></a></li>
+							<li><a href="#0"><div class="slide-number">4</div>  REWARDS INCOME<span></span></a></li>
 						</ul>
 					</nav> 
 				</div>

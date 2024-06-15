@@ -7,7 +7,7 @@
 								<div class="footer-logo animate fadeInLeft"><a href="{{route('Index')}}"><img src="{{asset('')}}main/assets/images/logo.png" style="width: 180px;margin-top:-2px; margin-bottom: 10px;margin-left: 34px;" alt=""></a></div>
 							</div>
 							<div class="col-md-9 col-sm-9">
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.</p>
+								<p>Unlock exclusive benefits and earning opportunities with HML Advertising & Marketing.</p>
 							</div>
 						</div>
 					
