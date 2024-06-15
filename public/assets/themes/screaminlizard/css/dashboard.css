@@ -2478,7 +2478,7 @@ a.btn-custom {
 
 @media (max-width: 991px) {
   .navbar {
-    background: transparent;
+    background: white;
     padding: 0;
     box-shadow: none;
     margin: 0 10px 0 10px;

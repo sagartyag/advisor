@@ -38,38 +38,122 @@
                 <table class="table table-striped mb-5">
                     <thead>
                         <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">amount</th>
-                            <th scope="col">operation</th>
-                            <th scope="col">From ID</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Required Team</th>
+                            <th scope="col">Total Team</th>
+                            <th scope="col">Earning</th>
+                            <th scope="col">Status</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <?php if(is_array($level_income) || is_object($level_income)){ ?>
-
-                        <?php date_default_timezone_set('UTC');
-                        $cnt = $level_income->perPage() * ($level_income->currentPage() - 1); ?>
-                        @foreach ($level_income as $value)
+                       
                             <tr>
-
-                                <td data-label="Date">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</td>
-                                <td data-label="Amount">
-                                    <span class="fontBold text-success">+{{ $value->comm }}
-                                        {{ generalDetail()->cur_text }}</span>
+                                <td data-label="Level">1</td>
+                                <td data-label="Required Team">
+                                   5
                                 </td>
-                                <td data-label="operation"> {{ $value->remarks }} </td>
-                                 <td data-label="From ID">{{ $value->fullname }} - {{ $value->rname }} </td>
+                                <td data-label="Total team">{{$gen_team1}} </td>
+                                 <td data-label="Earning"> {{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',1))}} </td>
+                                 <td data-label="Status">{{$gen_team1>=5?"Completed":"Pending"}} </td>
                             </tr>
-                        @endforeach
 
-                        <?php }?>
+
+                            <tr>
+                                <td data-label="Level">2</td>
+                                <td data-label="Required Team">
+                                   25
+                                </td>
+                                <td data-label="Total team">{{$gen_team2}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',2))}} </td>
+                                 <td data-label="Status">{{$gen_team2>=25?"Completed":"Pending"}} </td>
+                            </tr>
+
+
+                            <tr>
+                                <td data-label="Level">2</td>
+                                <td data-label="Required Team">
+                                   125
+                                </td>
+                                <td data-label="Total team">{{$gen_team3}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',3))}} </td>
+                                 <td data-label="Status">{{$gen_team3>=125?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">4</td>
+                                <td data-label="Required Team">
+                                   625
+                                </td>
+                                <td data-label="Total team">{{$gen_team4}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',4))}} </td>
+                                 <td data-label="Status">{{$gen_team4>=625?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">5</td>
+                                <td data-label="Required Team">
+                                    3125
+                                </td>
+                                <td data-label="Total team">{{$gen_team5}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',5))}} </td>
+                                 <td data-label="Status">{{$gen_team5>=3125?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">6</td>
+                                <td data-label="Required Team">
+                                    15625
+                                </td>
+                                <td data-label="Total team">{{$gen_team6}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',6))}} </td>
+                                 <td data-label="Status">{{$gen_team6>=15625?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">7</td>
+                                <td data-label="Required Team">
+                                    78125
+                                </td>
+                                <td data-label="Total team">{{$gen_team7}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',7))}} </td>
+                                 <td data-label="Status">{{$gen_team7>=78125?"Completed":"Pending"}} </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Level">8</td>
+                                <td data-label="Required Team">
+                                    390625
+                                </td>
+                                <td data-label="Total team">{{$gen_team8}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',8))}} </td>
+                                 <td data-label="Status">{{$gen_team8>=390625?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">9</td>
+                                <td data-label="Required Team">
+                                    1953125
+                                </td>
+                                <td data-label="Total team">{{$gen_team9}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',9))}} </td>
+                                 <td data-label="Status">{{$gen_team9>=1953125?"Completed":"Pending"}} </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="Level">10</td>
+                                <td data-label="Required Team">
+                                    9765625
+                                </td>
+                                <td data-label="Total team">{{$gen_team10}} </td>
+                                 <td data-label="Earning">{{currency()}} {{number_format(getPoolIncome($user->username,'matrix_club100',10))}} </td>
+                                 <td data-label="Status">{{$gen_team10>=9765625?"Completed":"Pending"}} </td>
+                            </tr>
+
+                       
 
                     </tbody>
                 </table>
-
-                {{ $level_income->withQueryString()->links() }}
-                              
+       
 
             </div>
         </div>
