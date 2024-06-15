@@ -238,24 +238,24 @@
 					</div>
 					<ul class="company-history">
 						<li class="clearfix animate fadeInLeft">
-							<span class="year">1229</span>
+							<span class="year">16%</span>
 							<div class="history-content">
-								<h4>start with a small Business</h4>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum.</p>
+								<h4>LEVEL INCOME</h4>
+								<p>Earn a 16% distribution across ten levels, ensuring consistent and scalable income as you grow your network and reach new levels within the HML Advertising & Marketing compensation plan.</p>
 							</div>
 						</li>
 						<li class="clearfix animate fadeInLeft" data-delay="100">
-							<span class="year">2005</span>
+							<span class="year">5x5</span>
 							<div class="history-content">
-								<h4>First Recognition</h4>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum.</p>
+								<h4>MATRIX LEVEL</h4>
+								<p>Achieve higher earnings through a 5x5 matrix plan, supporting both working and non-working pools, with commissions distributed across multiple levels for balanced growth.</p>
 							</div>
 						</li>
 						<li class="clearfix animate fadeInLeft" data-delay="200">
 							<span class="year">2016</span>
 							<div class="history-content">
-								<h4>World Most Popular Firm</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Curabitur metus ipsum. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+								<h4>AUTO POOL</h4>
+								<p>For every 1000 earned, a new user is introduced with the same ID in the working pool, levels filled according to the 5x5 matrix.</p>
 							</div>
 						</li>
 					</ul>
@@ -270,43 +270,43 @@
 						<li>
 							<div class="text-box animate bounceIn">
 								<i class="icon-img-1 white"></i>
-								<h4>Hml Ad Marketing</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4> Direct Income</h4>
+								<p>Earn a 20% commission on every direct referral, with unlimited earning potential by recommending friends and family members, generating income instantly upon each new user's joining.</p>
 							</div>
 						</li>
 						<li>
 							<div class="text-box animate bounceIn" data-delay="100">
 								<i class="icon-img-2 white"></i>
-								<h4>Save Money</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4>Level Income</h4>
+								<p>Earn a 16% distribution across ten levels, with specific percentages allocated per level, ensuring consistent and scalable income as you grow and support your network within the matrix structure.</p>
 							</div>
 						</li>
 						<li>
 							<div class="text-box animate bounceIn" data-delay="200">
 								<i class="icon-img-3 white"></i>
-								<h4>Secure Future</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4>Royalty Income</h4>
+								<p>Eligibility for Royalty Income requires 20 direct referrals for a daily 5% commission on new ID activations. If multiple achievers qualify, the income is distributed equally among them for fair rewards.	</p>
 							</div>
 						</li>
 						<li>
 							<div class="text-box animate bounceIn" data-delay="300">
 								<i class="icon-img-4 white"></i>
-								<h4>Business Services</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4>Rewards Income</h4>
+								<p>Receive bonuses up to 10 levels, with eligibility requiring 5 direct referrals on each level, rewarding sustained network growth and participation.</p>
 							</div>
 						</li>
 						<li>
 							<div class="text-box animate bounceIn" data-delay="400">
 								<i class="icon-img-5 white"></i>
-								<h4>Financial Services</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4>Retirement Income</h4>
+								<p>Receive 5% monthly income after completing all levels, providing a sustainable income stream post-retirement.</p>
 							</div>
 						</li>
 						<li>
 							<div class="text-box animate bounceIn" data-delay="500">
 								<i class="icon-img-6 white"></i>
-								<h4>Transport & Logistics</h4>
-								<p>Lorem ipsum dolor sit amet, Let it it floats back to you.</p>
+								<h4>Additional Benefits</h4>
+								<p>Receive continuous income from residual earnings, ensuring long-term financial stability and growth beyond initial efforts.</p>
 							</div>
 						</li>
 					</ul>
@@ -319,68 +319,68 @@
             <section class="bg-blue">
 				<div class="container">
 					<div class="heading margin-bottom-50 animate bounceIn" data-delay="200">
-						<h2>Our Expert Team</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
+						<h2>Empowerment Starts</h2>
+						<p>Join our extensive network of over 10,000 members, where many invest their time and resources to achieve personal and professional success through HML Advertising & Marketing's innovative opportunities and supportive community.</p>
 					</div>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="team-member animate fadeInUp">
-								<img src="{{asset('')}}main/assets/images/team/1.jpg" alt="">
-								<h4>Brandon Copperfield<span>Chief Finance Officer</span></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
-								<ul class="social-text">
+								<img src="{{asset('')}}main/assets/images/1user.jpg" alt="">
+								<h4>Level 1<span>Team</span></h4>
+								<p>Comprising five members, each earning a 5% commission with 5 direct referrals, resulting in a total commission amount of ₹50, fostering growth and financial rewards within the network.</p>
+								<!-- <ul class="social-text">
 									<li><a class="facebook" href="#.">facebook</a></li>
 									<li><a class="twitter" href="#.">twitter</a></li>
 									<li><a class="youtube" href="#.">youtube</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="team-member animate fadeInUp" data-delay="100">
-								<img src="{{asset('')}}main/assets/images/team/2.jpg" alt="">
-								<h4>Retirement<span>Head of Investment</span></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
-								<ul class="social-text">
+								<img src="{{asset('')}}main/assets/images/2user.jpg" alt="">
+								<h4>Level 2<span>Team</span></h4>
+								<p>Twenty-five members earning a 3% commission with 5 direct referrals, totaling ₹250 in commissions.</p>
+								<!-- <ul class="social-text">
 									<li><a class="facebook" href="#.">facebook</a></li>
 									<li><a class="twitter" href="#.">twitter</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="team-member animate fadeInUp" data-delay="200">
-								<img src="{{asset('')}}main/assets/images/team/3.jpg" alt="">
-								<h4>Retirement<span>Tax Advice</span></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
-								<ul class="social-text">
+								<img src="{{asset('')}}main/assets/images/3user.jpg" alt="">
+								<h4>Level 3<span>Team</span></h4>
+								<p>One hundred twenty-five members earning a 2% commission with 5 direct referrals, totaling ₹750 in commissions.</p>
+								<!-- <ul class="social-text">
 									<li><a class="facebook" href="#.">facebook</a></li>
 									<li><a class="twitter" href="#.">twitter</a></li>
 									<li><a class="youtube" href="#.">youtube</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="team-member animate fadeInUp" data-delay="300">
-								<img src="{{asset('')}}main/assets/images/team/4.jpg" alt="">
-								<h4>Brandon Copperfield<span>Chief Finance Officer</span></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
-								<ul class="social-text">
+								<img src="{{asset('')}}main/assets/images/4user.jpg" alt="">
+								<h4>Level 4<span>Team</span></h4>
+								<p>Six hundred twenty-five members earning a 1.5% commission with 5 direct referrals, totaling ₹3000 in commissions.</p>
+								<!-- <ul class="social-text">
 									<li><a class="facebook" href="#.">facebook</a></li>
 									<li><a class="twitter" href="#.">twitter</a></li>
 									<li><a class="youtube" href="#.">youtube</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="team-member animate fadeInUp" data-delay="400">
-								<img src="{{asset('')}}main/assets/images/team/5.jpg" alt="">
-								<h4>Retirement<span>Head of Investment</span></h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
-								<ul class="social-text">
+								<img src="{{asset('')}}main/assets/images/5user.jpg" alt="">
+								<h4>Level 5<span>Team</span></h4>
+								<p>Three thousand one hundred twenty-five members earning a 1% commission with 5 direct referrals, totaling ₹7000 in commissions.</p>
+								<!-- <ul class="social-text">
 									<li><a class="facebook" href="#.">facebook</a></li>
 									<li><a class="twitter" href="#.">twitter</a></li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 					</div>
@@ -399,7 +399,7 @@
 					</div>
 					<div class="two-items-carousel owl-carousel">
 						<div class="partner animate fadeInLeft">
-							<img src="{{asset('')}}main/assets/images/partners/1.jpg" alt="">
+							<img src="{{asset('')}}main/assets/images/partners/user1.jpg" alt="">
 							<div class="partner-content">
 								<h4>Adup Media LLC<span>Athletic Performance</span></h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor.</p>
