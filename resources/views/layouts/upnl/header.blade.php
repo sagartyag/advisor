@@ -139,6 +139,7 @@
                     <a class="sidebar-link {{menuActive('user.dashboard')}}" href="user/dashboard">
                         <i class="fal fa-border-all"></i> Dashboard </a>
                 </li>
+               
                 <li>
                     <a  href="{{route('user.deposit')}}"class="sidebar-link {{menuActive('user.deposit')}}">
                         <i class="fal fa-layer-group"></i> Packages </a>
@@ -154,6 +155,10 @@
                         <i class="fal fa-retweet-alt"></i> my referral </a>
                 </li>
 
+                <li>
+                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive(' user.level-team')}}">
+                        <i class="fal fa-retweet-alt"></i> Level Team </a>
+                </li>
                 
                 <li>
                     <a href="{{route('user.leadership-bonus')}}" class="sidebar-link {{menuActive('user.leadership-bonus')}}">
