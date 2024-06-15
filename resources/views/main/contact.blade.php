@@ -215,15 +215,16 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-sm-6 animate fadeInLeft">
-							<h3>Sales Queries</h3>
+							<h3>
+							Get in Touch with Us</h3>
 							<div class="row">
 								<div class="col-md-4 col-sm-4">
 									<img src="{{asset('')}}main/assets/images/sales-quries-img.jpg" class="quries-img" alt="">
 									<div class="height-20"></div>
 								</div>
 								<div class="col-md-8 col-sm-8">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor Eaque ipsa quae.</p>
-									<p>ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. luptas sit aspernatur.</p>
+									<p>We are here to help you with any questions or concerns you may have about HML Advertising & Marketing. Whether you need more information about our services, assistance with your account, or guidance on how to maximize your earnings, our dedicated support team is ready to assist you. </p>
+									<p>Please feel free to reach out to us through any of the contact methods listed below. We look forward to hearing from you and helping you achieve your goals with HML Advertising & Marketing.</p>
 								</div>
 							</div>
 							<div class="height-20"></div>
