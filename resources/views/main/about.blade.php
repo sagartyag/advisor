@@ -238,7 +238,7 @@
 					</div>
 					<ul class="company-history">
 						<li class="clearfix animate fadeInLeft">
-							<span class="year">16%</span>
+							<span class="year">1229</span>
 							<div class="history-content">
 								<h4>LEVEL INCOME</h4>
 								<p>Earn a 16% distribution across ten levels, ensuring consistent and scalable income as you grow your network and reach new levels within the HML Advertising & Marketing compensation plan.</p>
