@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <div class="header-text-full">
-                    <h3 class="ms-2 mb-0 mt-2">Level Team</h3>
+                    <h3 class="ms-2 mb-0 mt-2">My Referral</h3>
                 </div>
             </div>
         </div>
