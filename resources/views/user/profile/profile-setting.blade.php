@@ -421,12 +421,7 @@
                                             class="form-control" />
                                     </div>
 
-                                    <div class="input-box col-md-12">
-                                        <label for="">USDT - BEP20</label>
-                                        <input type="text"  name="usdtBep20" value="{{ $profile_data ? $profile_data->usdtBep20 : '' }}" 
-                                        placeholder="USDT BEP20 wallet"
-                                            class="form-control" />
-                                    </div>
+                                   
                                     <div class="input-box col-12">
                                         <button class="btn-custom">Update</button>
                                     </div>

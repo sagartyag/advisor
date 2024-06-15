@@ -71,17 +71,7 @@ class Register extends Controller
             }
             //check if email exist
           
-            $userEmail = User::where('email',$request->email)->first();
-            if($userEmail)
-            {
-                return Redirect::back()->withErrors(array('Email Already Exist!'));
-            }
-            $userPhone = User::where('phone',$request->phone)->first();
-            if($userPhone)
-            {
-                return Redirect::back()->withErrors(array('Mobile No Already Exist!'));
-            }
-            
+       
             
           
             if (isset($request->captcha)) {
@@ -144,7 +134,6 @@ class Register extends Controller
     
             // Check if sponsor has 20 referred users with investments
           
-            
 
             return redirect()->route('register_sucess')->with('messages', $data);
             //  return redirect()->route('register_sucess')->with('messages', $user);
