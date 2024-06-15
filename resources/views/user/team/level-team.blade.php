@@ -1,217 +1,87 @@
-
-      
-
-<section class="cab-ref cab-section">
-    <div class="container">
-      <h2 class="cab-title cab-ref__title">
-        <span class="cab-title__divider"></span>
-        <span class="cab-title__text">Партнерская программа</span>
-        <span class="cab-title__divider cab-title__divider--reverse"></span>
-      </h2>
-
-      <div class="cab-wrapper cab-ref__link-wrapper">
-        <div class="cab-ref__content">
-          <div class="cab-panel__wrapper cab-panel__wrapper--full-width">
-            <h3 class="cab-subtitle cab-ref__subtitle">Партнерская ссылка</h3>
-            <div class="cab-text cab-panel__ref-text cab-panel__ref-text--copy">Скопировано!</div>
-          </div>
-          
-            
-            <div class="cab-ref__text-wrapper">
-              <div class="cab-text">Пригласил:</div>
-              <div class="cab-text cab-text--bold cab-ref__text">Profvestcom</div>
+<section class="refferal-link">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="header-text-full">
+                    <h3 class="ms-2 mb-0 mt-2">My Referral</h3>
+                </div>
             </div>
-            
-          
         </div>
 
-        <div class="cab-panel__input-wrapper">
-          <input class="input-reset cab-panel__ref-input" type="text" value="https://excelsior.su/?ref=rameshk" readonly data-clipboard>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-start" id="ref-label">
+                    <div class="nav flex-column nav-pills mx-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <!-- Add your nav-pills items here if any -->
+                    </div>
+                    <div class="tab-content w-100" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">User Id</th>
+                                            <th scope="col">Registration date</th>
+                                            <th scope="col">E-mail</th>
+                                            <th scope="col">Package</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php if (is_array($direct_team) || is_object($direct_team)) { ?>
+                                        <?php
+                                        date_default_timezone_set('UTC');
+                                        $cnt = $direct_team->perPage() * ($direct_team->currentPage() - 1); ?>
+                                        @foreach ($direct_team as $value)
+                                        <tr>
+                                            <td data-label="Name">{{ $value->name }}</td>
+                                            <td data-label="User ID">{{ $value->username }}</td>
+                                            <td data-label="Registration date">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</td>
+                                            <td data-label="E-mail">{{ $value->email }}</td>
+                                            <td data-label="Package">{{ currency() }} {{ $value->investment->sum('amount') }}</td>
+                                            <td data-label="Status">{{ $value->active_status }}</td>
+                                        </tr>
+                                        @endforeach
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                                                {{ $direct_team->withQueryString()->links() }}
+
+                                            </div>
+                                        </div>
+                                 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+            </div>
         </div>
-
-        <ul class="list-reset cab-ref__list">
-          <li class="cab-divider cab-ref__item">
-            <div class="cab-ref__item-wrapper">
-              <div class="cab-ref__icon cab-ref__icon--1"></div>
-              <div class="cab-text cab-ref__item-text">Переходов по ссылке</div>
-            </div>
-            <div class="cab-ref__item-val">0</div>
-          </li>
-          <li class="cab-divider cab-ref__item">
-            <div class="cab-ref__item-wrapper">
-              <div class="cab-ref__icon cab-ref__icon--2"></div>
-              <div class="cab-text cab-ref__item-text">Кол-во партнеров</div>
-            </div>
-            <div class="cab-ref__item-val">0</div>
-          </li>
-          <li class="cab-divider cab-ref__item">
-            <div class="cab-ref__item-wrapper">
-              <div class="cab-ref__icon cab-ref__icon--3"></div>
-              <div class="cab-text cab-ref__item-text">Активных партнеров</div>
-            </div>
-            <div class="cab-ref__item-val">0</div>
-          </li>
-          <li class="cab-ref__item">
-            <div class="cab-ref__item-wrapper">
-              <div class="cab-ref__icon cab-ref__icon--4"></div>
-              <div class="cab-text cab-ref__item-text">Оборот партнеров</div>
-            </div>
-            <div class="cab-ref__item-val">0</div>
-          </li>
-        </ul>
-      </div>
-
-     
-
-      <div class="tabs cab-ref__tabs" data-tabs="cab-ref-tabs">
-        <ul class="list-reset tabs__nav cab-ref__nav">
-          <li class="tabs__nav-item cab-ref__nav-item"><button class="btn-reset tabs__nav-btn cab-ref__nav-btn"
-              type="button">1-й уровень</button></li>
-          <li class="tabs__nav-item cab-ref__nav-item"><button class="btn-reset tabs__nav-btn cab-ref__nav-btn"
-              type="button">2-й уровень</button></li>
-          <li class="tabs__nav-item cab-ref__nav-item"><button class="btn-reset tabs__nav-btn cab-ref__nav-btn"
-              type="button">3-й уровень</button></li>
-        </ul>
-        <div class="tabs__content cab-ref__content">
-          <div class="tabs__panel cab-ref__panel">
-            <div class="cab-ref__panel-wrapper">
-              <div class="cab-ref__panel-content cab-ref__panel-content--divider">
-                
-
-                  <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Последний доход от партнера</h3>
-                  <div class="cab-ref__panel-lvl">1-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger"> Отсутствует </span>
-                  </div>
-                </div>
-
-                
-                <div class="cab-ref__panel-divider"></div>
-              </div>
-              <div class="cab-ref__panel-content">
-                <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Общая партнерская прибыль</h3>
-                  <div class="cab-ref__panel-lvl">1-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger">
-                      
-                      0
-                      
-                    </span>
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--smaller">₽</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="list-reset deposits-list deposits-list--padding-bigger" data-ref-1>
-              <li class="deposits-list__item">
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Дата</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Логин</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Тариф</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Прибыль</div>
-              </li>
-
-              
-
-            </ul>
-          </div>
-
-          <div class="tabs__panel cab-ref__panel">
-            <div class="cab-ref__panel-wrapper">
-              <div class="cab-ref__panel-content cab-ref__panel-content--divider">
-                
-                  <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Последний доход от партнера</h3>
-                  <div class="cab-ref__panel-lvl">2-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger"> Отсутствует </span>
-                  </div>
-                </div>
-                
-                <div class="cab-ref__panel-divider"></div>
-              </div>
-              <div class="cab-ref__panel-content">
-                <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Общая партнерская прибыль</h3>
-                  <div class="cab-ref__panel-lvl">2-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger">
-                      0
-                    </span>
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--smaller">₽</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="list-reset deposits-list deposits-list--padding-bigger" data-ref-2>
-              <li class="deposits-list__item">
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Дата</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Логин</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Тариф</div>
-
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Прибыль</div>
-              </li>
-              
-              </li>
-            </ul>
-          </div>
-
-          <div class="tabs__panel cab-ref__panel">
-            <div class="cab-ref__panel-wrapper">
-              <div class="cab-ref__panel-content cab-ref__panel-content--divider">
-                
-
-                  <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Последний доход от партнера</h3>
-                  <div class="cab-ref__panel-lvl">3-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger"> Отсутствует </span>
-                  </div>
-                </div>
-                
-                <div class="cab-ref__panel-divider"></div>
-              </div>
-              <div class="cab-ref__panel-content">
-                <div class="cab-ref__panel-text">
-                  <h3 class="cab-ref__panel-title">Общая партнерская прибыль</h3>
-                  <div class="cab-ref__panel-lvl">3-й уровень</div>
-                </div>
-                <div class="cab-ref__panel-text cab-ref__bg cab-ref__panel-text--center">
-                  <div class="cab-ref__panel-balance">
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--bigger">
-                      0
-                    </span>
-                    <span class="cab-ref__panel-balance cab-ref__panel-balance--smaller">₽</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <ul class="list-reset deposits-list deposits-list--padding-bigger" data-ref-3>
-              <li class="deposits-list__item">
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Дата</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Логин</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Тариф</div>
-                <div class="deposits-list__text deposits-list__text--grey cab-ref__panel-subtitle">Прибыль</div>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-      
-    
+
+
+
+
+
+    <script>
+        "use strict";
+
+        function copyFunction() {
+            var copyText = document.getElementById("sponsorURL");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            /*For mobile devices*/
+            document.execCommand("copy");
+            Notiflix.Notify.Success(`Copied: ${copyText.value}`);
+        }
+    </script>
+
+

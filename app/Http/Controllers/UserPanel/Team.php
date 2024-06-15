@@ -353,15 +353,15 @@ class Team extends Controller
             }
         }
 
-        // $final = array();
-        // if(!empty($ret)){
-        //     array_walk_recursive($ret, function($item, $key) use (&$final){
-        //         $final[] = $item;
-        //     });
-        // }
+        $final = array();
+        if(!empty($ret)){
+            array_walk_recursive($ret, function($item, $key) use (&$final){
+                $final[] = $item;
+            });
+        }
 
 
-        return $ret;
+        return $final;
 
     }
 

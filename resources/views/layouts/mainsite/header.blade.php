@@ -70,7 +70,7 @@
         
         <!-- HEADER INNER -->
         <div class="header clearfix">
-          <a href="{{ route('Index') }}" class="logo"><img src="{{asset('')}}main/assets/images/Blue Bold Typographic Aqua Water Logo.png" style="width: 150px;margin-top:-12px; margin-bottom: 13px;margin-left: 34px;" alt=""></a>
+          <a href="{{ route('Index') }}" class="logo"><img src="{{asset('')}}main/assets/images/logo.png" style="    width: 179px;" alt=""></a>
           
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-nav" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>

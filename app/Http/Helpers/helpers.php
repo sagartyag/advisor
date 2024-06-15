@@ -530,6 +530,7 @@ $data = User::where('id',$id)->orderBy('id','desc')->first();
                  'comm' => $pp,
                  'remarks' =>$remarks,
                  'level' => $cnt,
+                 'tleft' => $table,
                  'rname' => $rname,
                  'fullname' => $fullname,
                  'ttime' => Date("Y-m-d"),
@@ -755,6 +756,13 @@ function getPositionNew($parentid,$table)
 function getTreeChildIdNew($parentid,$table)
 {
     $cou = \DB::table($table)->where('ParentId', $parentid)->get();
+      return $cou;
+}
+
+
+function getPoolIncome($user_id,$remraks,$level)
+{
+    $cou = \DB::table('incomes')->where('user_id_fk', $user_id)->where('tleft',$remraks)->where('remarks','Level Income')->where('level',$level)->sum('comm');
       return $cou;
 }
 

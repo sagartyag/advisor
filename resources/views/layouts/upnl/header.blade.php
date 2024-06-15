@@ -107,7 +107,7 @@
 
             <div class="sidebar-top">
                 <a class="navbar-brand d-none d-lg-block" href="{{asset('')}}"> <img
-                        src="main/assets/images/Blue Bold Typographic Aqua Water Logo.png" style="width: 177px; margin-bottom: 21px;margin-left: 34px;" alt="brand logo" /></a>
+                        src="main/assets/images/logo.png" style="width: 177px; margin-bottom: 21px;margin-left: 34px;" alt="brand logo" /></a>
                 <div class="mobile-user-area ">
                     <div class="thumb">
                         <img class="img-fluid user-img" src="assets/uploads/male-avatar-icon-13.jpg" alt="...">
@@ -139,6 +139,7 @@
                     <a class="sidebar-link {{menuActive('user.dashboard')}}" href="user/dashboard">
                         <i class="fal fa-border-all"></i> Dashboard </a>
                 </li>
+               
                 <li>
                     <a  href="{{route('user.deposit')}}"class="sidebar-link {{menuActive('user.deposit')}}">
                         <i class="fal fa-layer-group"></i> Packages </a>
@@ -154,6 +155,10 @@
                         <i class="fal fa-retweet-alt"></i> my referral </a>
                 </li>
 
+                <li>
+                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive(' user.level-team')}}">
+                        <i class="fal fa-retweet-alt"></i> Level Team </a>
+                </li>
                 
                 <li>
                     <a href="{{route('user.leadership-bonus')}}" class="sidebar-link {{menuActive('user.leadership-bonus')}}">

@@ -21,33 +21,71 @@ class Bonus extends Controller
     public function index(Request $request)
     {
        $user=Auth::user();
+    
+       $my_level_team=$this->my_level_team_count($user->username,'matrix_club100');
+       $gen_team1=(array_key_exists(1,$my_level_team) ?count($my_level_team[1]):0);
+       $gen_team2=(array_key_exists(2,$my_level_team) ?count($my_level_team[2]):0);
+       $gen_team3=(array_key_exists(3,$my_level_team) ?count($my_level_team[3]):0);
+       $gen_team4=(array_key_exists(4,$my_level_team) ?count($my_level_team[4]):0);
+       $gen_team5=(array_key_exists(5,$my_level_team) ?count($my_level_team[5]):0);
+       $gen_team6=(array_key_exists(6,$my_level_team) ?count($my_level_team[6]):0);
+       $gen_team7=(array_key_exists(7,$my_level_team) ?count($my_level_team[7]):0);
+       $gen_team8=(array_key_exists(8,$my_level_team) ?count($my_level_team[8]):0);
+       $gen_team9=(array_key_exists(9,$my_level_team) ?count($my_level_team[9]):0);
+       $gen_team10=(array_key_exists(10,$my_level_team) ?count($my_level_team[10]):0);
 
-          $limit = $request->limit ? $request->limit : paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Level Income')->orderBy('id', 'DESC');
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('remarks', 'LIKE', '%' . $search . '%')
-              ->orWhere('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('level', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
-
-      }
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
-        $this->data['level_income'] =$notes;
-        $this->data['search'] =$search;
+        $this->data['gen_team1'] = $gen_team1;
+        $this->data['gen_team2'] = $gen_team2;
+        $this->data['gen_team3'] = $gen_team3;
+        $this->data['gen_team4'] = $gen_team4;
+        $this->data['gen_team5'] = $gen_team5;
+        $this->data['gen_team6'] = $gen_team6;
+        $this->data['gen_team7'] = $gen_team7;
+        $this->data['gen_team8'] = $gen_team8;
+        $this->data['gen_team9'] = $gen_team9;
+        $this->data['gen_team10'] = $gen_team10;
+        $this->data['user'] = $user;
         $this->data['page'] = 'user.bonus.level-income';
         return $this->dashboard_layout();
 
 
     }
+
+
+    public function my_level_team_count($userid,$table,$level=10){
+      $arrin=array($userid);
+      $ret=array();
+
+      $i=1;
+      while(!empty($arrin)){
+          $alldown=\DB::table($table)->select('username')->whereIn('ParentId',$arrin)->get()->toArray();
+          if(!empty($alldown)){
+              $arrin = array_column($alldown,'username');
+              $ret[$i]=$arrin;
+              $i++;
+              if($i>$level)
+              {
+                break;  
+              }
+
+
+          }else{
+              $arrin = array();
+          }
+      }
+
+      // $final = array();
+      // if(!empty($ret)){
+      //     array_walk_recursive($ret, function($item, $key) use (&$final){
+      //         $final[] = $item;
+      //     });
+      // }
+
+
+      return $ret;
+
+  }
+
 
     public function cashback_income(Request $request)
     {

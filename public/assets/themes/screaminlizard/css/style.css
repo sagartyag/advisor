@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 :root {
-    --primary: #9ff550;
-  --secondary: #20e3b2;
-  --success: #26cc8c;
-  --danger: #ff6379;
-  --info: #59c8ff;
-  --warning: #ffce00;
-  --gold: #ffc107;
-  --white: #fff;
-  --black: #020015;
-  --dark: #050c20;
-  --dark2: #0f1730;
-  --black2: rgba(2, 0, 21, 0.1);
-  --bgLight: #e9f1ff;
-  --bgLight2: #f4f8ff;
-  --borderColor: rgba(255, 255, 255, 0.2);
-  --fontColor: #bdbadb;
-  --fontColor2: #a9a8b6;
-  --yt: #f20000;
-  --fb: #1877f2;
-  --ig: #e2306c;
-  --tw: #1d9bf0;
-  --in: #0172b1;
-  --gradiant: linear-gradient(90deg, #c2f043 0%, #65fe66 100%);
-  --gradiantAlpha: linear-gradient(90deg, rgba(101, 254, 101, 0.04) 0%, rgba(32, 227, 178, 0.04) 100%);
+    --primary: #09a223;
+    --secondary: #20e3b2;
+    --success: #26cc8c;
+    --danger: #ff6379;
+    --info: #59c8ff;
+    --warning: #ffce00;
+    --gold: #ffc107;
+    --white: #5f5656;
+    --black: #020015;
+    --dark: #050c20;
+    --dark2: #0f1730;
+    --black2: rgba(2, 0, 21, 0.1);
+    --bgLight: #e9f1ff;
+    --bgLight2: #f4f8ff;
+    --borderColor: rgba(255, 255, 255, 0.2);
+    --fontColor: #bdbadb;
+    --fontColor2: #a9a8b6;
+    --yt: #f20000;
+    --fb: #1877f2;
+    --ig: #e2306c;
+    --tw: #1d9bf0;
+    --in: #0172b1;
+    --gradiant: #09a223;
+    --gradiantAlpha: linear-gradient(90deg, rgba(101, 254, 101, 0.04) 0%, rgba(32, 227, 178, 0.04) 100%);
 }
 
 * {
@@ -153,11 +153,11 @@ button[data-bs-toggle=tooltip] i {
 
 .form-check label {
   cursor: pointer;
-  color: var(--fontColor);
+  color: #111111;
 }
 .form-check .form-check-input {
   border-radius: 3px;
-  background-color: transparent;
+  background-color: #6a5757;
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   margin-top: 3px;
@@ -384,7 +384,7 @@ i {
   font-family: "Bruno Ace SC", cursive;
   text-transform: capitalize;
   display: inline-block;
-  color: var(--black);
+  color: #ffffff;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -2405,7 +2405,7 @@ a.btn-custom {
   background-repeat: no-repeat;
 }
 .login-section .form-box {
-  background: #3a2c5f;
+  background: #fff;
   border-radius: 10px;
   padding: 40px;
   z-index: 1;
@@ -2426,14 +2426,15 @@ a.btn-custom {
 .login-section form .input-box .form-control {
   height: 55px;
   border-radius: 0px;
-  background-color: transparent;
+  background-color: #786d6d;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 15px 2px;
+  padding: 10px 25px 8px 20px;
   font-weight: normal;
   font-size: 14px;
   caret-color: var(--primary);
   color: var(--fontColor);
+  border-radius: 10px;
 }
 .login-section form .input-box .form-select:focus,
 .login-section form .input-box .form-control:focus {
@@ -2488,7 +2489,7 @@ a.btn-custom {
 }
 .login-section form .bottom {
   margin-top: 20px;
-  color: var(--fontColor);
+  color: #000000;
 }
 .login-section form .bottom a {
   color: var(--primary);
