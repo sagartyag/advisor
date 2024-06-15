@@ -1,29 +1,36 @@
+<section class="refferal-link">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="header-text-full">
+                    <h3 class="ms-2 mb-0 mt-2">Direct Team</h3>
+                </div>
+            </div>
+        </div>
 
-                <!-- My Referral -->
-                <section class="refferal-link">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col">
-                                <div class="header-text-full">
-                                    <h3 class="ms-2 mb-0 mt-2">My Referral</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main row mt-4">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-                                <div class="card-box refferal-box">
-                                    <h5>Your referral link</h5>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control"
-                                            value="{{ asset('') }}register?ref={{ Auth::user()->username }}"
-                                            id="sponsorURL" disabled="" />
-                                        <button id="copyBtn" onclick="copyText('sponsorURL')"
-                                            class="btn text-white">
-                                            Copy Link </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-start" id="ref-label">
+                    <div class="nav flex-column nav-pills mx-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <!-- Add your nav-pills items here if any -->
+                    </div>
+                    <div class="tab-content w-100" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>User ID</th>
+                                        <th>Email ID</th>
+                                        <th>Mobile No</th>
+                                        <th>Joining Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php if(is_array($direct_team) || is_object($direct_team)){ ?>
 
                         <div class="row mt-5">
                             <div class="col-md-12">
@@ -73,13 +80,10 @@
                                                               {{ $value->active_status }}
                                                             </td>
 
-                                                        </tr>
-                                                        @endforeach
-
-                                                        <?php }?>
-                                                    </tbody>
-                                                </table>
-                                                {{ $direct_team->withQueryString()->links() }}
+                                    <?php }?>
+                            </tbody>
+                                </table>
+                                             
 
                                             </div>
                                         </div>

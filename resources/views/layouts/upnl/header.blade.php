@@ -152,11 +152,11 @@
 
                 <li>
                     <a href="{{route('user.referral-team')}}" class="sidebar-link {{menuActive('user.referral-team')}}">
-                        <i class="fal fa-retweet-alt"></i> my referral </a>
+                        <i class="fal fa-retweet-alt"></i> Direct Team </a>
                 </li>
 
                 <li>
-                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive(' user.level-team')}}">
+                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive('user.level-team')}}">
                         <i class="fal fa-retweet-alt"></i> Level Team </a>
                 </li>
                 
