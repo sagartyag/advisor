@@ -185,7 +185,7 @@ Single slide style
 }
 .cd-hero-slider li:first-of-type {
   background-color: #ccc;
-  background-image: url("/main/assets/images/user bannner.jpg");
+  background-image: url("/main/assets/images/1.jpg");
 }
 .cd-hero-slider li:nth-of-type(2) {
   background-color: #ccc;
@@ -265,7 +265,7 @@ Single slide style
 }
 .cd-hero-slider h2, .cd-hero-slider p {
   margin: 0 auto 14px;
-  color: #fff;
+  color: #000;
   width: 100%;
 }
 .cd-hero-slider h2 {
@@ -348,7 +348,7 @@ Single slide style
   }
   .cd-hero-slider p {
     font-size: 18px;
-	color:#fff;
+	color:#121212;
 	font-family: "Montserrat",sans-serif;
 	margin-bottom:30px;
   }

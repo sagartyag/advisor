@@ -391,7 +391,7 @@
 			
 			
 			<!-- OUR PARTNERS -->
-            <section>
+            <!-- <section>
 				<div class="container">
 					<div class="heading margin-bottom-50 animate bounceIn">
 						<h2>Our Partners</h2>
@@ -442,7 +442,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- / OUR PARTNERS -->
 			@include('layouts.mainsite.footer')    
 			
