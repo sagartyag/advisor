@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <div class="header-text-full">
-                    <h3 class="ms-2 mb-0 mt-2">My Referral</h3>
+                    <h3 class="ms-2 mb-0 mt-2">Level Team</h3>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
                                             <th scope="col">User Id</th>
                                             <th scope="col">Registration date</th>
                                             <th scope="col">E-mail</th>
-                                            <th scope="col">Package</th>
+                                            <th scope="col">Level</th>
                                             <th scope="col">Status</th>
                                         </tr>
                                     </thead>
@@ -39,7 +39,7 @@
                                             <td data-label="User ID">{{ $value->username }}</td>
                                             <td data-label="Registration date">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</td>
                                             <td data-label="E-mail">{{ $value->email }}</td>
-                                            <td data-label="Package">{{ currency() }} {{ $value->investment->sum('amount') }}</td>
+                                            <td data-label="Package">{{ $value->level}} </td>
                                             <td data-label="Status">{{ $value->active_status }}</td>
                                         </tr>
                                         @endforeach
