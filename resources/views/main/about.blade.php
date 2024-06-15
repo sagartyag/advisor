@@ -104,10 +104,10 @@
 								</ul>
 							</li>
 							<li><a href="shop.html">Shop</a></li>
-							<li class="dropdown"><a href="#.">Contact Us <i class="fa fa-caret-down"></i></a>
+							<li class="dropdown"><a href="{{route('contact-us')}}">Contact Us <i class="fa fa-caret-down"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="contact-us.html">Contact Us One</a></li>
-									<li><a href="contact-us2.html">Contact Us Two</a></li>
+									<li><a href="{{route('contact-us')}}">Contact Us One</a></li>
+									<li><a href="{{route('contact-us')}}">Contact Us Two</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -180,8 +180,8 @@
 								<li><a href="shop.html">Shop</a></li>
 								<li class="dropdown"><a href="#.">Contact Us <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="contact-us.html">Contact Us One</a></li>
-										<li><a href="contact-us2.html">Contact Us Two</a></li>
+										<li><a href="{{route('contact-us')}}">Contact Us One</a></li>
+										<li><a href="{{route('contact-us')}}">Contact Us Two</a></li>
 									</ul>
 								</li>
 							</ul>
