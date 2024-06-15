@@ -43,7 +43,7 @@
                             <th scope="col">Operation</th>
                             <!--<th scope="col">operation</th>-->
                             <th scope="col">From ID</th>
-                            <th scope="col">Level</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
@@ -61,9 +61,9 @@
                                         {{ generalDetail()->cur_text }}</span>
                                 </td>
                                 <td data-label="Operation"> {{ $value->remarks }} </td>
-                                <td data-label="Level"> {{ $value->level }} </td>
+                                <td data-label="Level"> {{ $value->rname }} </td>
 
-                                <td data-label="From ID">{{ $value->fullname }} - {{ $value->rname }} </td>
+                    
                             </tr>
                         @endforeach
 

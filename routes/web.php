@@ -130,7 +130,7 @@ Route::get('/WithdrawHistory', [App\Http\Controllers\UserPanel\WithdrawRequest::
 // end withdraw
 
 //team
-Route::get('/referral-team', [App\Http\Controllers\UserPanel\Team::class, 'index'])->name('user.referral-team');
+Route::get('/direct-team', [App\Http\Controllers\UserPanel\Team::class, 'index'])->name('user.referral-team');
 Route::get('/affiliate_level', [App\Http\Controllers\UserPanel\Team::class, 'affiliate_level'])->name('user.affiliate_level');
 Route::get('/level-team', [App\Http\Controllers\UserPanel\Team::class, 'LevelTeam'])->name('user.level-team');
 Route::get('/left-team', [App\Http\Controllers\UserPanel\Team::class, 'leftteam'])->name('user.left-team');
