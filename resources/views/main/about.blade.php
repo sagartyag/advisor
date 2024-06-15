@@ -238,7 +238,7 @@
 					</div>
 					<ul class="company-history">
 						<li class="clearfix animate fadeInLeft">
-							<span class="year">1999</span>
+							<span class="year">1229</span>
 							<div class="history-content">
 								<h4>start with a small Business</h4>
 								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum.</p>
