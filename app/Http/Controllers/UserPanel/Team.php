@@ -28,26 +28,7 @@ class Team extends Controller
         $selected_level = $request->selected_level ? $request->selected_level :1;
             
         $search = $request->search ? $request->search : null;
-        // $notes = User::where('sponsor',$user->username);
-    $gen_team =  (array_key_exists($selected_level,$my_level_team) ? $my_level_team[$selected_level]:array());
-       end($my_level_team);        
-          $key = key($my_level_team);
-          $max_lenght=$key;
-          
-    ($selected_level)?Session::put('selected_level',$selected_level):"";
-
-            // $notes = User::where('sponsor',$user->username);
-          $notes = User::where(function($query) use($gen_team)
-              {
-                if(!empty($gen_team)){
-                  foreach ($gen_team as $key => $value) {
-                  //   $f = explode(",", $value);
-                  //   print_r($f)."<br>";
-                    $query->orWhere('id', $value);
-                  }
-                }else{$query->where('id',null);}
-              })->orderBy('id', 'DESC');
-      
+        $notes = User::where('sponsor',$user->id)->orderBy('id', 'DESC');
        if($search <> null && $request->reset!="Reset"){
         $notes = $notes->where(function($q) use($search){
           $q->orWhere('name', 'LIKE', '%' . $search . '%')
@@ -66,8 +47,6 @@ class Team extends Controller
 
         $this->data['direct_team'] =$notes;
         $this->data['search'] =$search;
-       $this->data['max_lenght'] =$max_lenght;
-
     $this->data['page'] = 'user.team.direct-team';
     return $this->dashboard_layout();
 

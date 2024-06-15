@@ -119,7 +119,6 @@
 
     })
 </script>
-@include('partials.notify')
 
 <style>
     .table-parent {

@@ -76,9 +76,9 @@
             </button>
         </div>
         <div class="link-item">
-            <a href="user/invest" {{menuActive('user.invest')}}>
+            <a href="user/deposit" {{menuActive('user.deposit')}}>
                 <span class="icon"><i class="fal fa-layer-group" aria-hidden="true"></i></span>
-                <span class="text">Deposit</span>
+                <span class="text">Activation</span>
             </a>
         </div>
         <div class="link-item {{menuActive('user.dashboard')}}">
@@ -142,7 +142,7 @@
                
                 <li>
                     <a  href="{{route('user.deposit')}}"class="sidebar-link {{menuActive('user.deposit')}}">
-                        <i class="fal fa-layer-group"></i> Packages </a>
+                        <i class="fal fa-layer-group"></i> Activation </a>
                 </li>
 
                 <li>

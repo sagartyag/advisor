@@ -28,17 +28,8 @@
                         <div class="row mt-5">
                             <div class="col-md-12">
                                 <div class="d-flex justify-content-start " id="ref-label">
-                                    <div class="nav flex-column nav-pills mx-2" id="v-pills-tab" role="tablist"
-                                        aria-orientation="vertical">
-
-                                        @for ($l=1;$l<=15;$l++)
-                                        <a  class=" nav-link <?php echo  (Session::get('selected_level')==$l)?"active":""?>   " id="v-pills-1-tab"
-                                          href="{{route('user.referral-team') }}?selected_level={{$l}}" >Level {{$l}}</a>
-                                        @endfor
-                                       
-                                      
-                                    </div>
-                                    <div class="tab-content w-90" id="v-pills-tabContent">
+                                    
+                                    <div class="tab-content w-100" id="v-pills-tabContent">
                                         <div class="tab-pane fade  show active   " id="v-pills-1" role="tabpanel"
                                             aria-labelledby="v-pills-1-tab">
                                             <div class="table-responsive">
@@ -49,7 +40,6 @@
                                                             <th scope="col">User Id</th>
                                                             <th scope="col">Registration date</th>
                                                             <th scope="col">E-mail</th>
-                                                            <th scope="col">Package</th>
                                                             <th scope="col">Status</th>
                                                         </tr>
                                                     </thead>
@@ -78,9 +68,7 @@
   
 
 
-                                                            <td data-label="Package">
-                                                              {{currency()}} {{ $value->investment->sum('amount') }}
-                                                            </td>
+                                                        
                                                             <td data-label="Status">
                                                               {{ $value->active_status }}
                                                             </td>
