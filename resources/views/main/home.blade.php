@@ -530,9 +530,9 @@
 							<div class="col-md-5 animate fadeInLeft"><img src="{{asset('')}}main/assets/images/level.jpg" alt=""></div>
 							<div class="col-md-7 animate fadeInRight">
 								<div class="meet-advisors-content">
-									<h3>David Fernando<span>Founder & CEO</span></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore. Love life’s sweetest reward Let it flow it floats back to you. Lorem ipsum dolor sit amet. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
+									<h3>Matrix Guidelines<span>Key Terms and Conditions</span></h3>
+									<p>To maintain level income, monthly new joins are mandatory. Achieving matrix levels requires 5 direct referrals on the first level. The auto pool system plays a crucial role in distributing earnings. For every 1000 earned, a new user with the same ID is introduced in the working pool, filling levels accordingly within the 5x5 matrix structure.</p>
+									<p>Additionally, after earning 1000, 500 is automatically deducted for the non-working matrix, and the level income is distributed as per the working pool. This structured approach ensures sustained growth, effective team building, and comprehensive management.</p>
 									<ul class="social-text">
 										<li><a href="#." class="facebook">facebook</a></li>
 										<li><a href="#." class="twitter">twitter</a></li>
@@ -577,7 +577,7 @@
 			
 			
 			<!-- TESTIMONIALS -->
-            <section class="bg-blue">
+            <!-- <section class="bg-blue">
 				<div class="container">
 					<div class="heading text-center animate bounceIn">
 						<h2>Happy Customers</h2>
@@ -978,12 +978,13 @@
 					
 				</div>
 				
-			</section><!-- / BENIFITS -->
+			</section> -->
+			<!-- / BENIFITS -->
 			
 			
 			
 			<!-- REQUEST A CALLBACK -->
-            <section>
+            <!-- <section>
 				<div class="container">
 					<div class="request-a-callback clearfix animate fadeInUp">
 						<div class="request-a-callback-content">
@@ -1010,7 +1011,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<!-- / REQUEST A CALLBACK -->
 			@include('layouts.mainsite.footer')
 			
