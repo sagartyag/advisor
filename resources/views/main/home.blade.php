@@ -105,8 +105,8 @@
 							<li><a href="shop.html">Shop</a></li>
 							<li class="dropdown"><a href="#.">Contact Us <i class="fa fa-caret-down"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="contact-us.html">Contact Us One</a></li>
-									<li><a href="contact-us2.html">Contact Us Two</a></li>
+									<li><a href="#">Contact Us One</a></li>
+									<li><a href="#">Contact Us Two</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -179,8 +179,8 @@
 								<li><a href="shop.html">Shop</a></li>
 								<li class="dropdown"><a href="#.">Contact Us <i class="fa fa-caret-down"></i></a>
 									<ul class="dropdown-menu">
-										<li><a href="contact-us.html">Contact Us One</a></li>
-										<li><a href="contact-us2.html">Contact Us Two</a></li>
+										<li><a href="#">Contact Us One</a></li>
+										<li><a href="#">Contact Us Two</a></li>
 									</ul>
 								</li>
 							</ul>
@@ -201,8 +201,8 @@
 							<div class="container">
 								<h2>Money Doesn’t<br>Come <span class="color-default">Without Care</span></h2>
 								<p>Finding your next Financial Hml Ad Marketing is as easy as counting from one to five.</p>
-								<a href="{{route('Index')}}" class="btn btn-primary" data-text="read more">read more</a>
-								<a href="{{route('Index')}}" class="btn btn-default" data-text="Contact Us">Contact Us</a>
+								<a href="{{route('about-us')}}" class="btn btn-primary" data-text="read more">read more</a>
+								<a href="{{route('contact-us')}}" class="btn btn-default" data-text="Contact Us">Contact Us</a>
 							</div>
 						</div>
 					</li>
@@ -212,7 +212,7 @@
 							<div class="container">
 								<h2>Friendly <span class="color-default">Assistance</span></h2>
 								<p>With over 15 years of experience we’ll ensure you always get the best<br>guidance. we’re with you every step of the way</p>
-								<a href="contact-us.html" class="btn btn-default" data-text="contact us today">contact us today</a>
+								<a href="#" class="btn btn-default" data-text="contact us today">contact us today</a>
 							</div>
 						</div>
 					</li>
@@ -222,8 +222,8 @@
 							<div class="container text-center">
 								<h2 class="color-white">Experience is Everything</h2>
 								<p class="color-white">With over 15 years of experience we’ll ensure you always get the best<br>guidance we’re with you every step of the way</p>
-								<a href="about-us.html" class="btn btn-primary" data-text="read more">read more</a>
-								<a href="contact-us.html" class="btn btn-default" data-text="Contact Us">Contact Us</a>
+								<a href="{{route('about-us')}}" class="btn btn-primary" data-text="read more">read more</a>
+								<a href="{{route('about-us')}}" class="btn btn-default" data-text="Contact Us">Contact Us</a>
 							</div>
 						</div>
 					</li>
@@ -268,7 +268,7 @@
 							<p>HML Advertising & Marketing Alive Group, a non-government company registered under Carrier Developments PVT LTD, has emerged as a top direct selling company dedicated to enhancing education. With over 10,000 active members, our extensive product range includes health care, personal care, hair care, FMCG, agricultural aid, home care, deodorants, perfumes, and natural beauty and skin treatments.</p>
 							<div class="height-10"></div>
 							<div class="height-20"></div>
-							<a href="{{route('Index')}}" class="btn btn-bordered-dark" data-text="read more">read more</a>
+							<a href="{{route('about-us')}}" class="btn btn-bordered-dark" data-text="read more">read more</a>
 							<div class="height-40"></div>
 						</div>
 						<div class="col-md-6 animate fadeInRight">
@@ -507,7 +507,7 @@
 						</div>
 						<div class="col-md-3">
 							<div class="text-right">
-								<a href="{{route('Index')}}" class="btn btn-primary get-in-touch animate fadeInRight" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
+								<a href="{{route('contact-us')}}" class="btn btn-primary get-in-touch animate fadeInRight" data-text="Contact us"><i class="icon-telephone114"></i>Contact us</a>
 							</div>
 						</div>
 					</div>
