@@ -245,10 +245,12 @@
 						<span class="cd-marker item-1"></span>
 						
 						<ul>
-							<li class="selected"><a href="#0"><div class="slide-number">1</div> Money Care<span> </span></a></li>
-							<li><a href="#0"><div class="slide-number">2</div>NON – WORKING POOL <span> </span></a></li>
-							<li><a href="#0"><div class="slide-number">3</div>  NON – WORKING POOL <span> </span></a></li>
-							<li><a href="#0"><div class="slide-number">4</div>  REWARDS INCOME<span></span></a></li>
+							<li class="selected"><a href="#0"><div class="slide-number">1</div> Money Care<span> ₹ 6230975</span></a></li>
+							<li><a href="#0"><div class="slide-number">2</div>NON – WORKING POOL (₹ 500)<span>₹ 31147378</span></a></li>
+							<li><a href="#0"><div class="slide-number">3</div>  NON – WORKING POOL (₹ 1000)<span> ₹ 61556750</span></a></li>
+							<li><a href="#0"><div class="slide-number">4</div>  REWARDS INCOME<span>T
+ REWARDS INCOME
+ ₹ 1779250</span></a></li>
 						</ul>
 					</nav> 
 				</div>
@@ -323,7 +325,43 @@
 			
 			
 			
-			
+			<!-- FUNFACTS -->
+			<div class="container">
+				<div class="funfacts text-center">
+					<div class="advisor-overlay"></div>
+					<div class="funfacts-inner">
+						<h2>Helping Small Businesses</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor exercitationemut labore.</p>
+						<div class="row text-center" id="counters">
+							<div class="col-md-3 col-xs-6">
+								<div class="counter">
+								   <span class="quantity-counter1 highlight">0</span>
+								   <h6 class="counter-details">Levels</h6>
+								 </div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="counter">
+								   <span class="quantity-counter2 highlight">0</span>
+								   <h6 class="counter-details">% Distribution</h6>
+								 </div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="counter">
+								   <span class="quantity-counter3 highlight">0</span>
+								   <h6 class="counter-details">Matrix</h6>
+								 </div>
+							</div>
+							<div class="col-md-3 col-xs-6">
+								<div class="counter">
+								   <span class="quantity-counter4 highlight">0</span>
+								   <h6 class="counter-details">REWARDS INCOME</h6>
+								 </div>
+							</div>
+						</div>
+					</div>
+				</div><!-- / CONTAINER -->
+			</div><!-- / FUNFACTS -->
+            
 			
 			
 			<!-- DIFFERENT SERVICES -->
