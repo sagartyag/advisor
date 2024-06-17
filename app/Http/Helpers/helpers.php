@@ -742,12 +742,6 @@ function getPositionNew($parentid,$table)
          {
           return $value->username;
         }
-        else
-        {
-          return  getPositionNew($value->username,$table);
-        }
-
-
       }
     }
 }

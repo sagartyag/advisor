@@ -1,23 +1,38 @@
-<section class="refferal-link">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="header-text-full">
-                    <h3 class="ms-2 mb-0 mt-2">Direct Team</h3>
-                </div>
+<!-- main -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="header-text-full">
+                <h3 class="ms-2 mb-0 mt-2">Direct Team</h3>
             </div>
         </div>
+    </div>
+    <div class="main row">
+        <div class="col-12">
+            <!-- table -->
+            <div class="table-parent table-responsive mt-4">
+                <div class="table-search-bar">
+                    <div>
+                        <form action="{{ route('user.referral-team') }}" method="get">
+                            <div class="row g-3 align-items-end">
+                                <div class="input-box col-lg-3 col-md-3 col-xl-3 col-12">
+                                    <input type="text" name="search" value="{{ @$search }}" class="form-control"
+                                        placeholder="Search for operation" />
+                                </div>
 
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <div class="d-flex justify-content-start" id="ref-label">
-                    <div class="nav flex-column nav-pills mx-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <!-- Add your nav-pills items here if any -->
+                          
+
+
+
+                                <div class="input-box col-lg-3 col-md-3 col-xl-3 col-12">
+                                    <button class="btn-custom w-100" type="submit"><i class="fal fa-search"></i>
+                                        Search</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="tab-content w-100" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
+                </div>
+                <table class="table table-striped">
                                     <thead class="thead-dark">
                                     <tr>
                                         <th>#</th>
@@ -83,42 +98,15 @@
                                     <?php }?>
                             </tbody>
                                 </table>
-                                             
-
-                                            </div>
-                                        </div>
-                                 
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-
+       
+                                {{ $direct_team->withQueryString()->links() }}
 
             </div>
         </div>
     </div>
+</div>
 
 
-
-
-
-
-    <script>
-        "use strict";
-
-        function copyFunction() {
-            var copyText = document.getElementById("sponsorURL");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            /*For mobile devices*/
-            document.execCommand("copy");
-            Notiflix.Notify.Success(`Copied: ${copyText.value}`);
-        }
-    </script>
-
-
+</div>
+</div>
+</div>

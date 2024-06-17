@@ -172,7 +172,6 @@ public function cancel_payment($id)
               $balance=round(Auth::user()->FundBalance(),2);
             
            
-                  // dd($balance); die;
                 if ($balance>=$request->amount)
                  {
               
@@ -264,7 +263,7 @@ public function cancel_payment($id)
           {
              return Redirect::back()->withErrors(array('Insufficient Balance in Wallet'));
           }
-        }
+      }
         else
         {
           return Redirect::back()->withErrors(array('Invalid Transaction Password'));
