@@ -96,7 +96,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
     $(function () {
-        $('input[name="amount"]').on('change keyup', function () {
+        $('input[name="amount2"]').on('change keyup', function () {
             let str = $(this).val();
             str = str.replace(',', '.');
             $(this).val(str);

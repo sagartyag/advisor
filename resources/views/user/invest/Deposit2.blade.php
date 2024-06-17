@@ -119,7 +119,6 @@
 
     })
 </script>
-@include('partials.notify')
 
 <style>
     .table-parent {
@@ -127,3 +126,5 @@
         border-radius: 5px;
         padding: 15px;
     }
+    
+    </style>
