@@ -16,22 +16,39 @@ use Validator;
 
 class Team extends Controller
 {
-  public function index(Request $request)
-  {
-    $user=Auth::user();
-      $limit = $request->limit ? $request->limit : paginationLimit();
-      $status = $request->status ? $request->status : null;
-      $search = $request->search ? $request->search : null;
-      $notes = User::where('sponsor',$user->id)->orderBy('id', 'DESC');
-     if($search <> null && $request->reset!="Reset"){
-      $notes = $notes->where(function($q) use($search){
-        $q->Where('name', 'LIKE', '%' . $search . '%')
-        ->orWhere('username', 'LIKE', '%' . $search . '%')
-        ->orWhere('email', 'LIKE', '%' . $search . '%')
-        ->orWhere('phone', 'LIKE', '%' . $search . '%')
-        ->orWhere('jdate', 'LIKE', '%' . $search . '%')
-        ->orWhere('active_status', 'LIKE', '%' . $search . '%');
-      });
+    public function index(Request $request)
+    {
+      $user=Auth::user();
+      // print_r($user->username);die();
+        $my_level_team=$this->my_level_team_count($user->id);
+
+
+      // print_r($ids);die;
+        $limit = $request->limit ? $request->limit : paginationLimit();
+        $selected_level = $request->selected_level ? $request->selected_level :1;
+            
+        $search = $request->search ? $request->search : null;
+        $notes = User::where('sponsor',$user->id)->orderBy('id', 'DESC');
+       if($search <> null && $request->reset!="Reset"){
+        $notes = $notes->where(function($q) use($search){
+          $q->orWhere('name', 'LIKE', '%' . $search . '%')
+          ->orWhere('username', 'LIKE', '%' . $search . '%')
+          ->orWhere('email', 'LIKE', '%' . $search . '%')
+          ->orWhere('phone', 'LIKE', '%' . $search . '%')
+          ->orWhere('jdate', 'LIKE', '%' . $search . '%')
+          ->orWhere('active_status', 'LIKE', '%' . $search . '%');
+        });
+
+      }
+            $notes = $notes->paginate($limit)
+                ->appends([
+                    'limit' => $limit
+                ]);
+
+        $this->data['direct_team'] =$notes;
+        $this->data['search'] =$search;
+    $this->data['page'] = 'user.team.direct-team';
+    return $this->dashboard_layout();
 
     }
 

@@ -42,7 +42,7 @@
                 <div class="col-md-6">
                     <div class="authincation-content">
                         <div class="row no-gutters">
-                            <div class="col-xl-12" style="background: black;">
+                            <div class="col-xl-12" style="background: #bccdcb;">
                                 <div class="auth-form">
                                     <div class="text-center mb-3">
                                         <a href="#"><img src="{{asset('')}}main/assets/images/logo.png" style="

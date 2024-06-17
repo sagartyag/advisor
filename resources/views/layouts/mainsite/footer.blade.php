@@ -7,7 +7,7 @@
 								<div class="footer-logo animate fadeInLeft"><a href="{{route('Index')}}"><img src="{{asset('')}}main/assets/images/logo.png" style="width: 180px;margin-top:-2px; margin-bottom: 10px;margin-left: 34px;" alt=""></a></div>
 							</div>
 							<div class="col-md-9 col-sm-9">
-								<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem or phone +11 987 654 3210 ipsum quia dolor sit amet, consectetur.</p>
+								<p>Unlock exclusive benefits and earning opportunities with HML Advertising & Marketing.</p>
 							</div>
 						</div>
 					
@@ -16,7 +16,7 @@
 						<div class="footer-left">
 							<div class="footer-address-widget clearfix">
 								<ul>
-									<li><i class="icon-telephone114"></i>+1 900 234 567<a href="mailto:support@advisor.com">supprt@advisor.com</a></li>
+									<li><i class="icon-telephone114"></i>+1 900 234 567<a href="mailto:support@hmladmarketing.com">supprt@hmladmarketing.com</a></li>
 									<li><i class="icon-icons74"></i>Manhattan Hall,<span>Advisor Ltd 1258, Melbourne, australia</span></li>
 								</ul>
 							</div>
@@ -25,19 +25,14 @@
 									<div class="usefull-links-widget clearfix">
 										<h4>Usefull Links</h4>
 										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about-us.html">About Us</a></li>
-											<li><a href="services.html">Services</a></li>
+											<li><a href="{{asset('')}}">Home</a></li>
+											<li><a href="{{route('about-us')}}">About Us</a></li>
+											<li><a href="{{route('services')}}">Services</a></li>
 											<li><a href="#.">Projects</a></li>
-											<li><a href="news.html">News</a></li>
-											<li><a href="contact-us.html">Contact Us</a></li>
+								
+											<li><a href="{{route('contact-us')}}">Contact Us</a></li>
 										</ul>
-										<ul>
-											<li><a href="services.html">Bonds</a></li>
-											<li><a href="services.html">Commodities</a></li>
-											<li><a href="services.html">Investments</a></li>
-											<li><a href="services.html">Retirement</a></li>
-										</ul>
+										
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -45,13 +40,13 @@
 										<h4>Twitter Feeds</h4>
 										<div class="tweet">
 											<i class="icon-twitter-1"></i>
-											<p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+											<p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">hmladmarketing.com</a>
 											<span>about a month ago</span>
 											</p>
 										</div>
 										<div class="tweet">
 											<i class="icon-twitter-1"></i>
-											<p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+											<p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">hmladmarketing.com</a>
 											<span>about a month ago</span>
 											</p>
 										</div>
@@ -88,7 +83,7 @@
 				<div class="footer-bottom">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6 col-sm-6"><p>Coyright © 2016 Advisor. All rights reserved.</p></div>
+							<div class="col-md-6 col-sm-6"><p>Coyright © 2024 {{siteName()}}. All rights reserved.</p></div>
 							<div class="col-md-6 col-sm-6"><p class="text-right">Designed by <a href="#.">Brighthemes</a></p></div>
 						</div>
 					</div>

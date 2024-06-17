@@ -15,30 +15,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <base href="https://tenorai.live/">
     <meta name="description"
-        content="Join Tenor Ai , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
+        content="Join {{siteName()}} , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
     <meta name="keywords"
         content="investment, HYIP, HYIP investment, hyip website, invest, investment, Investment Management system, investment script, Bug Finder, bug-finder, bugfinder.net, bugfinder">
     <link rel="shortcut icon" href="assets/upload/logo/sfavicon.png" type="image/x-icon">
 
     <link rel="apple-touch-icon" href="{{asset('')}}assets/uploads/gateway/logo.png">
-    <title>Tenor AI | About Us</title>
+    <title>{{siteName()}} | About Us</title>
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{asset('')}}assets/uploads/gateway/favicon.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Tenor AI | About Us">
+    <meta name="apple-mobile-web-app-title" content="{{siteName()}} | About Us">
 
-    <meta itemprop="name" content="Tenor AI | About Us">
+    <meta itemprop="name" content="{{siteName()}} | About Us">
     <meta itemprop="description"
-        content="Join Tenor Ai , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
+        content="Join {{siteName()}} , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
     <meta itemprop="image"
         content="https://tenorai.live/{{asset('')}}assets/uploads/gateway/tenor.png">
 
     <meta property="og:type" content="website">
     <meta property="og:title"
-        content="Join Tenor Ai , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
+        content="Join {{siteName()}} , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
     <meta property="og:description"
-        content="Join Tenor Ai , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
+        content="Join {{siteName()}} , the top-notch arbitrage trading platform, offering manual and auto trading solutions, liquidity farming, and a lucrative referral program. Start profiting from the market imbalances today and earn up to 10% commissions by referring others">
     <meta property="og:image"
         content="https://tenorai.live/{{asset('')}}assets/uploads/gateway/tenor.png" />
     <meta property="og:image:type" content="image/png" />
@@ -169,7 +169,7 @@ $name = \App\Models\User::where('username', $sponsor)->first();
                                         <div class="row g-4">
                                             <div class="input-box col-lg-6">
                                                 <input type="text" id="signupform-referral"
-                                                    class="form-control check_sponsor_exist" name="sponsor" value=""
+                                                    class="form-control check_sponsor_exist" name="sponsor" value="{{$sponsor}}"
                                                     data-response="sponsor_res" placeholder="Sponsor Id">
                                                     <span id="sponsor_res"><?=($name)?$name->name:"";?></span>
                                             </div>
