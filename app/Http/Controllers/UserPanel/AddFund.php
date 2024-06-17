@@ -111,13 +111,25 @@ public function SubmitBuyFund(Request $request)
   }
 
   
+// public function fundtransfer(Request $request)
+// {
+
+// $this->data['page'] = 'user.fund.fundtransfer';
+// return $this->dashboard_layout();
+// }
+
 public function fundtransfer(Request $request)
 {
-$this->data['page'] = 'user.fund.fundtransfer';
-return $this->dashboard_layout();
+    
+
+    $user = Auth::user();
+    // Fetch fund transfers where transfer_id matches the authenticated user's ID
+    $fund_transfers = Fundtransfer::where('transfer_id', $user->id)->paginate(5); // Using pagination
+    $this->data['fund_transfers'] = $fund_transfers;
+    $this->data['page'] = 'user.fund.fundtransfer';
+    return $this->dashboard_layout();
+    
 }
-
-
 
 
 public function submittransfer(Request $request)
@@ -139,8 +151,8 @@ public function submittransfer(Request $request)
         $user_detail = User::where('username', $request->username)->orderBy('id', 'desc')->limit(1)->first();
         $password = $request->tpassword;
         $amount = $request->amount;
-        $charge = $amount * 5 / 100;
-        $netAmt = $amount - $charge;
+        // $charge = $amount * 5 / 100;
+        // $netAmt = $amount - $charge;
 
         $available_balance = Auth::user()->available_balance();
         $FundBalance = Auth::user()->FundBalance();
@@ -161,8 +173,8 @@ public function submittransfer(Request $request)
                     'user_id_from' => $user->username,
                     'user_id_to' => $user_detail->username,
                     'amount' => $amount,
-                    'charge' => $charge,
-                    'netAmt' => $netAmt,
+                    
+                    'netAmt' => $amount,
                     'transfer_date' => date("Y-m-d"),
                 ];
                 $payment = Fundtransfer::create($data);
@@ -180,9 +192,6 @@ public function submittransfer(Request $request)
         return redirect()->route('user.fundtransfer')->withErrors(['error' => $e->getMessage()])->withInput();
     }
 }
-
-
-
 
 
 

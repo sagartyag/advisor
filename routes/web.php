@@ -104,6 +104,7 @@ Route::get('/fundHistory', [App\Http\Controllers\UserPanel\AddFund::class, 'fund
 Route::any('/SubmitBuyFund', [App\Http\Controllers\UserPanel\AddFund::class, 'SubmitBuyFund'])->name('user.SubmitBuyFund');
 Route::any('/FundTransfer', [App\Http\Controllers\UserPanel\AddFund::class, 'fundtransfer'])->name('user.fundtransfer');
 Route::any('/SubmitTransfer', [App\Http\Controllers\UserPanel\AddFund::class, 'submittransfer'])->name('user.submittransfer');
+
 // end add fund
 
 // invest
