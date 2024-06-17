@@ -39,7 +39,7 @@
                                             <td data-label="User ID">{{ $value->username }}</td>
                                             <td data-label="Registration date">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</td>
                                             <td data-label="E-mail">{{ $value->email }}</td>
-                                            <td data-label="Package">{{ $value->level}} </td>
+                                            <td data-label="Package">{{ $value->level}} </td>***
                                             <td data-label="Status">{{ $value->active_status }}</td>
                                         </tr>
                                         @endforeach

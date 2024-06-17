@@ -135,7 +135,7 @@ public function cancel_payment($id)
         $validation =  Validator::make($request->all(), [
           
             'amount' => 'required|numeric',
-            'walletType' => 'required|',
+            // 'walletType' => 'required|',
             'user_id' => 'required|exists:users,username',
             'transaction_password' => 'required',
     
@@ -169,15 +169,14 @@ public function cancel_payment($id)
     
              // print_r($last_package);die;
              $balance=0;
-              $walletType = $request->walletType;
-             if ($walletType==1) 
-             {
-              $balance=round(Auth::user()->FundBalance(),2);
-             }
+            //   $walletType = $request->walletType;
+            //  if ($walletType==1) 
+            //  {
+            //   $balance=round(Auth::user()->FundBalance(),2);
+            //  }
            
-                  // dd($balance); die;
-                if ($balance>=$request->amount)
-                 {
+            //     if ($balance>=$request->amount)
+            //      {
               
                $data = [
                     'plan' => 1,
@@ -189,7 +188,7 @@ public function cancel_payment($id)
                     'status' => 'Active',
                     'sdate' => Date("Y-m-d"),
                     'active_from' => $user->username,
-                    'walletType' =>$request->walletType,
+                    // 'walletType' =>$request->walletType,
                     'created_at' =>Date('Y-m-d H:i:s'),
     
                 ];
@@ -267,11 +266,11 @@ public function cancel_payment($id)
           {
              return Redirect::back()->withErrors(array('Insufficient Balance in Wallet'));
           }
-        }
-        else
-        {
-          return Redirect::back()->withErrors(array('Invalid Transaction Password'));
-        }
+      // }
+        // else
+        // {
+        //   return Redirect::back()->withErrors(array('Invalid Transaction Password'));
+        // }
     
     
       }
