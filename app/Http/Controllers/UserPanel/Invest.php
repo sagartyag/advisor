@@ -151,8 +151,8 @@ public function cancel_payment($id)
     
            $password= $request->transaction_password;
     
-          //  if (Hash::check($password, $user->tpassword))
-          //  {
+           if (Hash::check($password, $user->tpassword))
+           {
     
           
     
@@ -216,7 +216,7 @@ public function cancel_payment($id)
                          $this->downline="";
                          $this->find_position(($user_detail->sponsor_detail)?$user_detail->sponsor_detail->username:0,$table);
                          $sponsor_user =  $this->downline; 
-                        $Report=getAvailablePosition($sponsor_user,$table);
+                        $Report=getPosition($sponsor_user,$table);
                         $sponsor= (!empty($Report))?$Report['pos_id']:0;
                         $position= (!empty($Report))?$Report['position']:0;
                         $userLevel = \DB::table($table)->where('username',$sponsor)->first();               
@@ -264,11 +264,11 @@ public function cancel_payment($id)
           {
              return Redirect::back()->withErrors(array('Insufficient Balance in Wallet'));
           }
-        // }
-        // else
-        // {
-        //   return Redirect::back()->withErrors(array('Invalid Transaction Password'));
-        // }
+        }
+        else
+        {
+          return Redirect::back()->withErrors(array('Invalid Transaction Password'));
+        }
     
     
       }

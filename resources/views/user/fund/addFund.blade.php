@@ -94,42 +94,6 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-    $(function () {
-        $('input[name="amount2"]').on('change keyup', function () {
-            let str = $(this).val();
-            str = str.replace(',', '.');
-            $(this).val(str);
-            let min = 500;
 
-            let amount = parseFloat(str);
-
-            if (amount >= min) {
-                $(".submit-btn").prop("disabled", false);
-                $('.cashback-info-label').html('');
-            } else {
-                $(".submit-btn").prop("disabled", true);
-                $('.cashback-info-label').html("minimum Withdrawal is " + min + " INR").css('color', 'red');
-            }
-        });
-
-        $('#wallet_type').change(function () {
-            let icon = $(this).val();
-            if (icon == "USDT.TRC20") {
-                $('#walletAddress').val('{{Auth::user()->usdtTrc20}}');
-            } else {
-                $('#walletAddress').val('{{Auth::user()->usdtBep20}}');
-            }
-        });
-    });
-
-    function copyAddress() {
-        var addressText = document.getElementById("address");
-        addressText.select();
-        addressText.setSelectionRange(0, 99999); // For mobile devices
-        document.execCommand("copy");
-        alert("Address copied to clipboard!");
-    }
-</script>
 </body>
 </html>
