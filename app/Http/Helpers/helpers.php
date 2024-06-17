@@ -760,6 +760,86 @@ function getTreeChildIdNew($parentid,$table)
 }
 
 
+
+function getPosition2($parentid,$table)
+{
+    $childid = getTreeChildId2($parentid,$table);
+
+    if ($childid != "-1") {
+        $id = $childid;
+    } else {
+        $id = $parentid;
+    }
+    // dd($id);
+    while ($id != "" || $id != "0") {
+            $nextchildid = getTreeChildId2($id,$table);
+            if ($nextchildid == "-1") {
+                break;
+            } else {
+                $id = $nextchildid;
+            }
+       
+    }
+
+    $res['ParentId'] = $id;
+    return $res;
+}
+
+function getTreeChildId2($parentid,$table)
+{
+    $child = \DB::table($table)->where('ParentId', $parentid)->count();
+    if ($child<5) {
+        return $child->username;
+    } else {
+        return -1;
+    }
+}
+
+function isUserExists($id)
+{
+    $user = User::find($id);
+    return $user ? true : false;
+}
+
+
+function getAvailablePosition($parentid,$table)
+{
+    // Iterate through levels
+    while ($parentid != "" && $parentid != "0") {
+       $positionArray = array(0,'Left','Left1','Middle','Right1','Right');
+        for ($position = 1; $position <= 5; $position++) {
+          $position = $positionArray[$position];
+            $childid = getTreeChildId22($parentid, $position,$table);
+            if ($childid == "-1") {
+                // Found an available position
+                $res['pos_id'] = $parentid;
+                $res['position'] = $position;
+                return $res;
+            } else {
+                $parentid = $childid;
+            }
+        }
+    }
+
+    // If no available position is found
+    return null;
+}
+
+function getTreeChildId22($parentid, $position,$table)
+{
+    $cou = \DB::table($table)->where('ParentId', $parentid)->where('position', $position)->count();
+    $cid = \DB::table($table)->where('ParentId', $parentid)->where('position', $position)->first();
+    if ($cou == 1) {
+        return $cid->username;
+    } else {
+        return -1;
+    }
+}
+
+
+
+
+
 function getPoolIncome($user_id,$remraks,$level)
 {
     $cou = \DB::table('incomes')->where('user_id_fk', $user_id)->where('tleft',$remraks)->where('remarks','Level Income')->where('level',$level)->sum('comm');

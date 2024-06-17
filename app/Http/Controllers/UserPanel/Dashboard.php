@@ -35,9 +35,7 @@ class Dashboard extends Controller
       $personal_deposit=Investment::where('user_id',$user->id)->where('status','Active')->sum('amount');
 
       $tolteam=$this->my_level_team_count($user->id);               
- 
-      
-
+    
      
       $deposit_report = Investment::where('user_id',$user->id)->orderBy('id','desc')->get();
       $weekly_profit = Income::where('user_id',$user->id)
