@@ -20,10 +20,7 @@
                                         placeholder="Search for operation" />
                                 </div>
 
-                                <div class="input-box col-lg-3 col-md-3 col-xl-3 col-12">
-                                    <input type="text" name="remark" value="" class="form-control"
-                                        placeholder="Remark" />
-                                </div>
+                            
 
 
 

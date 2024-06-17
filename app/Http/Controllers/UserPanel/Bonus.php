@@ -44,9 +44,11 @@ class Bonus extends Controller
         $this->data['gen_team8'] = $gen_team8;
         $this->data['gen_team9'] = $gen_team9;
         $this->data['gen_team10'] = $gen_team10;
+     
         $this->data['user'] = $user;
         $this->data['page'] = 'user.bonus.level-income';
         return $this->dashboard_layout();
+        
 
 
     }
