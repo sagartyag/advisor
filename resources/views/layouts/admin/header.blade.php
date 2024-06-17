@@ -244,17 +244,17 @@ table#example {
                     </li>
 
 
-                <li><a href="{{route('admin.user-activation')}}" class="ai-icon" aria-expanded="false">
-                        <i class="flaticon-072-printer"></i>
-                        <span class="nav-text">User Activation </span>
-                    </a>
-                </li>  
+                <!--<li><a href="{{route('admin.user-activation')}}" class="ai-icon" aria-expanded="false">-->
+                <!--        <i class="flaticon-072-printer"></i>-->
+                <!--        <span class="nav-text">User Activation </span>-->
+                <!--    </a>-->
+                <!--</li>  -->
                 
-                <li><a href="{{route('admin.free-activation')}}" class="ai-icon" aria-expanded="false">
-                        <i class="flaticon-072-printer"></i>
-                        <span class="nav-text">Free Activation </span>
-                    </a>
-                </li>  
+                <!--<li><a href="{{route('admin.free-activation')}}" class="ai-icon" aria-expanded="false">-->
+                <!--        <i class="flaticon-072-printer"></i>-->
+                <!--        <span class="nav-text">Free Activation </span>-->
+                <!--    </a>-->
+                <!--</li>  -->
                 <!--    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">-->
                 <!--        <i class="flaticon-043-menu"></i>-->
                 <!--        <span class="nav-text">Activities </span>-->
@@ -268,11 +268,24 @@ table#example {
                 <!--    </ul>-->
                 <!--</li>-->
 
-                <li><a href="{{route('admin.add-price')}}" class="ai-icon" aria-expanded="false">
-                           <i class="flaticon-072-printer"></i>
-                        <span class="nav-text">Settings </span>
-                    </a>
-                </li>
+                <!--<li><a href="{{route('admin.add-price')}}" class="ai-icon" aria-expanded="false">-->
+                <!--           <i class="flaticon-072-printer"></i>-->
+                <!--        <span class="nav-text">Settings </span>-->
+                <!--    </a>-->
+                <!--</li>-->
+                
+                <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-045-heart"></i>
+							<span class="nav-text">Fund Management</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('admin.add-fund-list') }}">Fund Request</a></li>
+                            <li><a href="{{route('admin.fund-report')}}">Fund Report</a></li>
+
+                        </ul>
+                    </li>
+                    
+                    
                     
 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">

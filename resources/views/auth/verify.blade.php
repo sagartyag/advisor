@@ -94,20 +94,20 @@
 
 {{ csrf_field() }}
                            
-                                                <p >Register Successfully</p>
+                                                <h3 >Register Successfully</h3>
                                                 @if(session()->has('messages'))
                             <?php
                             $user_details=session()->get('messages')
                         ?>
                                                           
-                            <h4 style="color:#FFFFFF ">Congratulations!  Your Account has been successfully Created.</h4>
+                            <h4 style="color:#000 ">Congratulations!  Your Account has been successfully Created.</h4>
                             <br>
 
-                            <h4 style="color: white">Dear <span class="main-color"
+                            <h4 style="color: #000">Dear <span class="main-color"
                                     style="color: #ffc70d;font-weight: 700;">{{$user_details['name']  }}</span>
                             </h4>
                             <br>
-                            <h4 style="color: white"> You have been successfully registered. <br> Your
+                            <h4 style="color: #000"> You have been successfully registered. <br> Your
                                 user id is <span class="main-color"
                                     style="    color: #33ab71;font-weight: 700;">{{$user_details['username']  }}</span>
                                 Password is: <span class="main-color" style="color: #33ab71;font-weight: 700;">
@@ -118,7 +118,10 @@
                             @endif
 
                             <div class=" mt-7 mt-lg-8">
-                                <a href="{{route('login')}}" type="" class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"  id="submit">Login</a>
+                                <a href="{{route('login')}}" style="    background: #33ab71;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;" type="" class="cmn-btn py-3 px-5 px-lg-6 mt-7 mt-lg-8 w-100 d-center"  id="submit">Login</a>
                             </div> 
                                                 </form>
                         </div>
