@@ -156,8 +156,13 @@
                 </li>
 
                 <li>
-                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive(' user.level-team')}}">
+                    <a href="{{route('user.level-team')}}" class="sidebar-link {{menuActive('user.level-team')}}">
                         <i class="fal fa-retweet-alt"></i> Level Team </a>
+                </li>
+
+                <li>
+                    <a href="{{route('user.fundtransfer')}}" class="sidebar-link {{menuActive(' user.fundtransfer')}}">
+                        <i class="fal fa-retweet-alt"></i> Fund Transfer </a>
                 </li>
                 
                 <li>

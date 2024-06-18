@@ -789,6 +789,15 @@ function getTreeChildId2($parentid,$table)
     }
 }
 
+
+
+function getTreeCount($parentid,$table)
+{
+    $child = \DB::table($table)->where('ParentId', $parentid)->count();
+   
+        return $child;
+}
+
 function isUserExists($id)
 {
     $user = User::find($id);
@@ -796,21 +805,24 @@ function isUserExists($id)
 }
 
 
-function getAvailablePosition($parentid,$table)
+function getAvailablePosition($parentid, $table)
 {
-    // Iterate through levels
-    while ($parentid != "" && $parentid != "0") {
-       $positionArray = array(0,'Left','Left1','Middle','Right1','Right');
-        for ($position = 1; $position <= 5; $position++) {
-          $position = $positionArray[$position];
-            $childid = getTreeChildId22($parentid, $position,$table);
+    $positionArray = [0, 'Left', 'Left1', 'Middle', 'Right1', 'Right'];
+    $queue = [[$parentid, 1]]; // Initialize queue with the parent id and starting position
+
+    while (!empty($queue)) {
+        list($currentId, $startPosition) = array_shift($queue);
+        for ($positionIndex = 1; $positionIndex <= 5; $positionIndex++) {
+            $position = $positionArray[$positionIndex];
+            $childid = getTreeChildId22($currentId, $position, $table);
             if ($childid == "-1") {
                 // Found an available position
-                $res['pos_id'] = $parentid;
+                $res['pos_id'] = $currentId;
                 $res['position'] = $position;
                 return $res;
             } else {
-                $parentid = $childid;
+                // Add the child to the queue to check its children
+                $queue[] = [$childid, 1];
             }
         }
     }
@@ -819,16 +831,16 @@ function getAvailablePosition($parentid,$table)
     return null;
 }
 
-function getTreeChildId22($parentid, $position,$table)
+function getTreeChildId22($parentid, $position, $table)
 {
-    $cou = \DB::table($table)->where('ParentId', $parentid)->where('position', $position)->count();
     $cid = \DB::table($table)->where('ParentId', $parentid)->where('position', $position)->first();
-    if ($cou == 1) {
+    if ($cid) {
         return $cid->username;
     } else {
         return -1;
     }
 }
+
 
 
 

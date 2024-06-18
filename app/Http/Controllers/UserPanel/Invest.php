@@ -252,9 +252,7 @@ public function cancel_payment($id)
 
      
                
-    
-    
-    
+
           $notify[] = ['success', $user_detail->username.' User Activation  Submited successfully'];
           return redirect()->back()->withNotify($notify);
     
