@@ -173,8 +173,7 @@ public function submittransfer(Request $request)
                     'user_id_from' => $user->username,
                     'user_id_to' => $user_detail->username,
                     'amount' => $amount,
-                    
-                    'netAmt' => $amount,
+                    'from_wallet' => $request->wallet,
                     'transfer_date' => date("Y-m-d"),
                 ];
                 $payment = Fundtransfer::create($data);
