@@ -151,8 +151,8 @@ public function cancel_payment($id)
     
            $password= $request->transaction_password;
     
-           if (Hash::check($password, $user->tpassword))
-           {
+          //  if (Hash::check($password, $user->tpassword))
+          //  {
     
           
     
@@ -264,11 +264,11 @@ public function cancel_payment($id)
           {
              return Redirect::back()->withErrors(array('Insufficient Balance in Wallet'));
           }
-        }
-        else
-        {
-          return Redirect::back()->withErrors(array('Invalid Transaction Password'));
-        }
+        // }
+        // else
+        // {
+        //   return Redirect::back()->withErrors(array('Invalid Transaction Password'));
+        // }
     
     
       }
