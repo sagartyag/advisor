@@ -1,6 +1,20 @@
 <!-- main -->
 <div class="container-fluid">
+
+
+    <style>
+        .bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #050c20;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+    background: #fbfbfb;
+}
+    </style>
     <div class="main row" id="firebase-app">
+
 
         @if (Auth::user()->active_status == 'Pending')
             <div class="col-12">

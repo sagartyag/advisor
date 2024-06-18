@@ -46,7 +46,7 @@ class WithdrawRequest extends Controller
         try{
 
              $validation =  Validator::make($request->all(), [
-            'amount' => 'required|numeric|min:500',
+            'amount' => 'required|numeric|min:300',
             'PSys' => 'required',    
              'transaction_password' => 'required',               
 
@@ -66,14 +66,9 @@ class WithdrawRequest extends Controller
         
         $bank = Bank::where('user_id',$user->id)->first();
         
-        if ($request->PSys=="USDT") 
-        {
-          $account =  $user->usdtBep20;
-        }
-        else
-        {
+       
           $account =($bank)?$bank->account_no:"";
-        }
+       
        
         if ($balance>=$request->amount)
         {
@@ -84,6 +79,13 @@ class WithdrawRequest extends Controller
           return Redirect::back()->withErrors(array('Any Withdraw limit per Id once a day !'));    
          }
          
+
+         $sponsorID=Withdraw::where('sponsor',$user->id)->where('active_status','Active')->count();
+         
+         if($sponsorID<5)
+         {
+          return Redirect::back()->withErrors(array('you need to 5 Referrals user for first withdrawal!'));    
+         }
          
          
          $user_detail=Withdraw::where('user_id',$user->id)->where('status','Pending')->first();
@@ -127,7 +129,7 @@ class WithdrawRequest extends Controller
               }
               else
                 {
-                return Redirect::back()->withErrors(array('Please Update Your Usdt and Bank Details!'));
+                return Redirect::back()->withErrors(array('Please Update Your  Bank Details!'));
                 }  
 
 

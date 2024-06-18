@@ -17,7 +17,7 @@
                           {{ csrf_field() }}
                             <div class="row g-3 align-items-end">
 
-                                <code class=""  style="font-weight: 900;    color: #9ef54f;font-size:15px;text-align: center">Available Balance : <b>{{ currency() }} {{ number_format(Auth::user()->available_balance(), 2) }}  </b></code>
+                                <code class=""  style="font-weight: 900;    color: #000;font-size:15px;text-align: center">Available Balance : <b>{{ currency() }} {{ number_format(Auth::user()->available_balance(), 2) }}  </b></code>
                 
 
                                
@@ -34,10 +34,9 @@
                                  <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12">
                                     <select class="form-control" name="PSys"
                                         id="wallet_type">
-                                        <option data-icon="INR" value="INR">
+                                        <option selected data-icon="INR" value="INR">
                                            INR</option>
-                                        <option data-icon="USDT" value="USDT">
-                                         USDT</option>
+                                      
                                   
                                     </select>
                                 </div>
@@ -53,8 +52,7 @@
 
 
                                 <div class="input-box col-lg-12 col-md-12 col-xl-12 col-12">
-                                    <button class="btn-custom w-100" type="submit"><i
-                                            class="fal fa-dollar-sign submit-btn "></i>Withdraw</button>
+                                    <button class="btn-custom w-100 submit-btn" type="submit">Withdraw</button>
                                 </div>
                             </div>
                         </form>
