@@ -55,7 +55,7 @@ class User extends Authenticatable
 
     public function FundBalance()
     {
-    $balance = Auth::user()->buy_fundAmt->sum('amount')-(Auth::user()->buy_packageAmt());
+    $balance = (Auth::user()->buy_fundAmt->sum('amount')+Auth::user()->fundtransfered->sum('amount'))-(Auth::user()->buy_packageAmt()+Auth::user()->fundtransfer->where('from_wallet',1)->sum('amount'));
     return $balance;
     } 
 
@@ -143,7 +143,7 @@ class User extends Authenticatable
     
     public function available_balance()
     {
-    $balance = (Auth::user()->users_incomes()) - (Auth::user()->withdraw());
+    $balance = (Auth::user()->users_incomes()) - (Auth::user()->withdraw()+Auth::user()->fundtransfer->where('from_wallet',1)->sum('amount'));
     return $balance;
     } 
 
@@ -173,6 +173,17 @@ class User extends Authenticatable
     {
         return  Withdraw::where('user_id',Auth::user()->id)->where('status','!=','Failed')->where('walletType',2)->sum('amount');
     } 
+
+    public function fundtransfer()
+    {
+       return $this->hasMany('App\Models\Fundtransfer','transfer_id','id');
+   } 
+   public function fundtransfered()
+   {
+      return $this->hasMany('App\Models\Fundtransfer','transfered_id','id');
+  } 
+
+
 
 
     public function investment(){

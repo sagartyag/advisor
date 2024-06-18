@@ -127,7 +127,7 @@
             <div class="wallet-wrapper m-4">
                
                 <div class="d-flex justify-content-between mt-3">
-                    <a class="btn btn-primary" href="user/invest"><i class="fal fa-wallet" aria-hidden="true"></i>
+                    <a class="btn btn-primary" href="user/deposit"><i class="fal fa-wallet" aria-hidden="true"></i>
                         Deposit</a>
                     <a class="btn btn-primary" href="user/Withdraw"><i class="fal fa-usd-circle" aria-hidden="true"></i>
                         Withdraw</a>

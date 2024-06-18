@@ -131,7 +131,6 @@
                                             <th scope="col">User ID From</th>
                                             <th scope="col">User ID To</th>
                                             <th scope="col">Amount</th>
-                                            <th scope="col">Net Amount</th>
                                             <th scope="col">Transfer Date</th>
                                         </tr>
                                     </thead>
@@ -139,11 +138,10 @@
                                         @if (is_array($fund_transfers) || is_object($fund_transfers))
                                             @foreach ($fund_transfers as $value)
                                                 <tr>                                
-                                                    <td data-label="User ID From">{{ $value->user_id_from }}</td>
-                                                    <td data-label="User ID To">{{ $value->user_id_to }}</td>
+                                                    <td data-label="User ID From">{{ $value->user->name }} {{ $value->user_id_from }}</td>
+                                                    <td data-label="User ID To">{{ $value->user_to->name }} {{ $value->user_id_to }}</td>
                                                     <td data-label="Amount">{{ $value->amount }}</td>
-                                                    <td data-label="Net Amount">{{ $value->netAmt }}</td>
-                                                    <td data-label="Transfer Date">{{ date('D, d M Y H:i:s', strtotime($value->transfer_date)) }}</td>
+                                                    <td data-label="Transfer Date">{{ date('D, d M Y H:i:s', strtotime($value->created_at)) }}</td>
                                                 </tr>
                                             @endforeach
                                         @endif
@@ -165,7 +163,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
     $(function () {
-        $('input[name="amount"]').on('change keyup', function () {
+        $('input[name="amount2"]').on('change keyup', function () {
             let str = $(this).val();
             str = str.replace(',', '.');
             $(this).val(str);
